@@ -6,7 +6,7 @@ Karl Andrei Alcober, WFX Autumn
 Riana Bejarin, WFX Autumn  
 SDG 16
 
-Data Repository Google Docs link: [Data Repository](ttps://docs.google.com/document/d/10pb-aYqunM8BJE41rsJRfcHcvvrlRBWEvHHvBNdF60c/edit?usp=sharing)  
+Data Repository Google Docs link: [Data Repository](https://docs.google.com/document/d/10pb-aYqunM8BJE41rsJRfcHcvvrlRBWEvHHvBNdF60c/edit?usp=sharing)  
 Crime Rate, Birth, and Marriage Datasets Google Sheets link: [Dataset/s](https://docs.google.com/spreadsheets/d/1n75vu-pxSNtaExi_43i31aW3uC2apfbIyaFokpP-FWY/edit?usp=sharing)   
 
 (webpage still under development)
