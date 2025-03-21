@@ -5,5 +5,3 @@ Wherever you are
 You study CS  
 And you know how to code  
 
-TEST COMMIT
-test sync
