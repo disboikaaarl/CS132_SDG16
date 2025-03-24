@@ -24,7 +24,14 @@ We endeavor to leverage the power of data science to analyze statistics surround
 Is there a statistically significant correlation between crime rates and birth and marriage rates in the Philippines?  
 What patterns in crime rates emerge across Philippine regions with varying birth and marriage rates?  
 How do these patterns differ between urban and rural areas?  
-Which combinations of birth and marriage rates show the strongest association with specific types of crime?  
+Which combinations of birth and marriage rates show the strongest association with specific types of crime?
+## NULL HYPOTHESIS
+There is no statistically significant correlation between crime rates and birth and marriage rates in the Philippines.
+## ALTERNATIVE HYPOTHESIS
+There is a statistically significant correlation between crime rates and birth and marriage rates in the Philippines.
+## ACTION PLAN
+We collect monthly crime data by type and region, along with birth and marriage data by region, to explore trends and assess correlations between crime rates and both birth and marriage rates.
+
 
 Data Repository Google Docs link: [Data Repository](https://docs.google.com/document/d/10pb-aYqunM8BJE41rsJRfcHcvvrlRBWEvHHvBNdF60c/edit?usp=sharing)  
 Crime Rate, Birth, and Marriage Datasets Google Sheets link: [Dataset/s](https://docs.google.com/spreadsheets/d/1n75vu-pxSNtaExi_43i31aW3uC2apfbIyaFokpP-FWY/edit?usp=sharing)   
