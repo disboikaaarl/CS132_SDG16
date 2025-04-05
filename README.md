@@ -7,7 +7,7 @@ Riana Bejarin, WFX Autumn
 SDG 16
 
 ## OVERVIEW
-*Sabi nga nila, mahirap magkapamilya at magka-anak.*
+*Sabi nga nila, mahirap magkapamilya at magka-anak.*  
 While starting a family is often seen as a source of joy and stability, the reality in the Philippines is far more complicated. This ideal is burdened with pressure: financial, emotional, and social.
 Declining marriage and birth rates reflect a growing hesitation among Filipinos to commit to long-term family life, while crime continues to challenge communities across the country. Although many factors shape crime, its patterns may mirror broader societal stress — and when regarded alongside trends in birth and marriage, they could reveal meaningful relationships.
 Thus, our group chose to explore the correlation between crime, birth, and marriage rates in the Philippines. Without assuming any causation, we seek to uncover patterns and trends that could shed light on the realities of Filipino family life and public safety.
