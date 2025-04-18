@@ -129,6 +129,7 @@ html{
     align-items: center;
     font-style: italic;
     font-size: 30px;
+    padding: 60px 20px;
   }
 
   .overview-container{
@@ -245,6 +246,10 @@ html{
     align-items: center;
   }
 
+  .overview-rquestions:hover{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); 
+  }
+
   .overview-flex5{
     display: flex;
     align-items: center;
@@ -292,6 +297,20 @@ html{
     justify-content: center;
     align-items: center;
   }
+
+  .overview-part2, .overview-problem,
+  .overview-solution, .overview-nhypothesis,
+  .overview-ahypothesis, .overview-part6{
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.15);
+  }
+
+  .overview-part2:hover, .overview-problem:hover,
+  .overview-solution:hover, .overview-nhypothesis:hover,
+  .overview-ahypothesis:hover, .overview-part6:hover{
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.2);
+  }
+
+
 
   /* data-section */
   .data-section{
