@@ -21,15 +21,15 @@ html{
   nav {
     position: fixed;
     width: 100%;
-    padding: 30px;
+    padding: 20px 0 25px 0;
     z-index: 10;
-    background: rgba(39, 39, 39, 0.2);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4),rgba(20, 20, 20, 0.2), rgba(39, 39, 39, 0));
   }
 
   nav:hover{
-    background: rgba(39, 39, 39, 0.4);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.55), rgba(39, 39, 39, 0));
   }
-  
+
   nav ul {
     list-style: none;
     display: flex;
@@ -49,8 +49,12 @@ html{
     color: #504d9e
   }
   
-  nav ul li a:focus {
-    color: #504d9e
+  nav ul li a:active {
+    color: #504d9e !important;
+  }
+
+  article{
+    scroll-margin-top: 100px;
   }
   
   /* home section*/
@@ -141,24 +145,35 @@ html{
 
   .overview-flex1{
     display: flex;
-    gap: 50px;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
+    padding: 40px 20px 100px 20px;
   }
 
   .overview-part1{
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .overview-caption{
     width: 500px;
-    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
   }
 
   .overview-image {
     width: 500px;
-    height: 200px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid
+    border: 1px solid;
+    padding: 0 20px;
   }
 
   .overview-flex2{
@@ -330,7 +345,7 @@ html{
 
   /* team-section */
   .team-section {
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -363,7 +378,7 @@ html{
   }
   
   .team-member {
-    height: 360px;
+    height: 400px;
     width: 300px;
     background-color: white;
     border-radius: 12px;
@@ -374,6 +389,31 @@ html{
     transform: scale(1.1);
     box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
   }
+
+  .team-member img{
+    height: 180px;
+    width: 300px;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .member-caption h2{
+    margin-bottom: 5px;
+  }
+
+  .member-caption p{
+    text-align: justify;
+  }
+
+  .member-caption{
+    margin: 10px 15px 15px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
 
   footer{
     height: 70px;
