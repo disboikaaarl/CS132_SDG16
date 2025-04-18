@@ -14,7 +14,7 @@ html{
 
   /* BG IMAGE */
   .overview-flex5, .overview-flex6, .team-section, .home-section, .overview-container{
-    background-image: url('../elements/gggrain.svg');
+    background-image: url('../elements/bg/gggrain.svg');
   }
 
   /* Navigation Bar */
