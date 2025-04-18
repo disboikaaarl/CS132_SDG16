@@ -48,7 +48,8 @@ html{
   /* home section*/
   .home-section {
     height: 100vh;
-    background-color: #272727;
+    background-image: url('elements/bg/gggrain.svg');
+    background-repeat: repeat;
     display: flex;
     justify-content: center;
     align-items: center;
