@@ -35,7 +35,7 @@ html{
     display: flex;
     justify-content: flex-end;
     gap: 30px;
-    padding-right: 20px;
+    padding-right: 40px;
   }
   
   nav ul li a {
@@ -378,11 +378,16 @@ html{
   }
   
   .team-member {
-    height: 400px;
+    height: 450px;
     width: 300px;
     background-color: white;
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .team-member:hover{
@@ -398,12 +403,18 @@ html{
     border-top-right-radius: 12px;
   }
 
+  .member-picture{
+    height: 180px;
+    width: 300px;
+  }
+
   .member-caption h2{
     margin-bottom: 5px;
   }
 
   .member-caption p{
     text-align: justify;
+    color: #272727;
   }
 
   .member-caption{
@@ -412,6 +423,36 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .member-plugs{
+    display: flex;
+    padding: 15px 15px 10px 15px;
+  }
+
+  .member-plugs img{
+    height: 30px;
+    width: 30px;
+  }
+
+  .member-plugs a{
+    text-decoration: none;
+  }
+
+  svg, .ig-logo-path{
+    fill: #a6a6a6;
+  }
+
+  .fb-logo:hover{
+    fill: #1877f2;
+  }
+
+  .ig-logo:hover, .ig-logo-path:hover{
+    fill: url(#igGradient);
+  }
+
+  .github-logo:hover{
+    fill: #1B1F24;
   }
 
 
