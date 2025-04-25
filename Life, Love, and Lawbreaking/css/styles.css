@@ -15,6 +15,9 @@ html{
   /* BG IMAGE */
   .overview-flex5, .overview-flex6, .team-section, .home-section, .overview-container{
     background-image: url('../elements/bg/gggrain.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
   }
 
   /* Navigation Bar */
@@ -455,6 +458,9 @@ html{
     fill: #1B1F24;
   }
 
+  .linkedin-logo:hover{
+    fill: #0e76a8;
+  }
 
   footer{
     height: 70px;
