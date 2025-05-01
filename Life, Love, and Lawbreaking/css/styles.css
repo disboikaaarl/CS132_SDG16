@@ -27,7 +27,7 @@ html{
     gap: 20px;
   }
 
-  .overview-section h2  {
+  .overview-section h2 {
     font-family: 'Agrandir-Bold', sans-serif;
     font-style: italic;
     font-size: 35px;
@@ -47,9 +47,9 @@ html{
   }
 
   .hypo-title{
-    font-family: 'Bebas Neue', sans-serif;
     color: #ff8c8c;
-    font-size: 25px;
+    font-family: 'Agrandir-Bold', sans-serif;
+    font-size: 20px;
   }
 
   .prob-sol-text h2{
@@ -154,7 +154,7 @@ html{
   }
 
   .overview-container{
-    background: linear-gradient(135deg,rgba(133, 1, 1, 1) 0%, rgba(39, 39, 39, 1) 19%, rgba(39, 39, 39, 1) 79%, rgba(133, 1, 1, 1) 99%);
+    background-color: #000000;
     padding: 100px 250px;
 
     display: flex;
@@ -215,7 +215,8 @@ html{
 
   .hypothesis-container{
     display: flex;
-    gap: 40px;  
+    gap: 70px;  
+    padding: 20px 0;
   }
 
   .hypothesis-content{
