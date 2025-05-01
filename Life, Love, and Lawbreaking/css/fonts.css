@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Agrandir-Regular';
+    src: url(../elements/fonts/Agrandir-Regular.otf) format('opentype');
+  }
+
+@font-face {
+    font-family: 'Agrandir-Bold';
+    src: url(../elements/fonts/Agrandir-TextBold.otf) format('opentype');
+  }
+
+@font-face {
+    font-family: 'Agrandir-GrandHeavy';
+    src: url(../elements/fonts/Agrandir-GrandHeavy.otf) format('opentype');
+}
