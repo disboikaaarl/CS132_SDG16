@@ -16,18 +16,17 @@ html{
 
   body p{
     font-family:'Nunito', sans-serif;
-    color: #ffefef;
+    color: #ffffff;
     font-size: 19px;
   }
 
   .text-content{
-    text-align: justify;
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
 
-  .overview-section h2 {
+  .overview-section h2, .data-section h2{
     font-family: 'Agrandir-Bold', sans-serif;
     font-style: italic;
     font-size: 35px;
@@ -58,16 +57,21 @@ html{
   }
 
   /* BG IMAGE */   
-  .home-section, .team-section{
-    background: linear-gradient(180deg,rgba(133, 1, 1, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  .home-section, .team-section, .overview-section{
+    background:
+      radial-gradient(ellipse at top, #560000, transparent), radial-gradient(ellipse at bottom, #000000);
   }
 
   /* Navigation Bar */
   nav {
     position: fixed;
     width: 100%;
-    padding: 20px 0 25px 0;
+    padding: 15px 0 15px 0;
     z-index: 10;
+
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   nav ul {
@@ -100,12 +104,12 @@ html{
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white;
     padding: 100px 20px;
   }
 
   .home-content h1 {
     font-size: 100px;
+    color: white;
   }
 
   .home-content p{
@@ -133,7 +137,6 @@ html{
   /* overview-section */
   .overview-section{
     min-height: 100vh;
-    text-align: justify;
     color: #272727;
   }
 
@@ -154,7 +157,6 @@ html{
   }
 
   .overview-container{
-    background-color: #000000;
     padding: 100px 250px;
 
     display: flex;
@@ -226,10 +228,42 @@ html{
     align-items: center;
   }
 
-
   /* data-section */
   .data-section{
     min-height: 100vh;
+    background-color: #000000;
+    padding: 100px 250px;
+  }
+
+  .data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .collapsible{
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border: none;
+
+    font-family: 'Agrandir-Bold', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    margin: 0;
+  }
+
+  .collapsible-content{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .active, .collapsible:hover {
+    background-color: #ff4b4b;
   }
 
   /* methods-section */
