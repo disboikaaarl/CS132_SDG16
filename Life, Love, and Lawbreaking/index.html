@@ -9,14 +9,17 @@
         <link href="https://api.fontshare.com/v2/css?f[]=nunito@400&f[]=bebas-neue@400&display=swap" rel="stylesheet">
     </head>
     <body>
-        <nav>
+        <div class="loading-screen">
+            <div class="loading-spinner"></div>
+          </div>
+        <nav id="navbar">
             <ul>
-                <li><a href="#home" data-scroll>HOME</a></li>
-                <li><a href="#overview" data-scroll>OVERVIEW</a></li>
-                <li><a href="#data" data-scroll>DATA</a></li>
-                <li><a href="#methods" data-scroll>METHODS</a></li>
-                <li><a href="#results" data-scroll>RESULTS</a></li>
-                <li><a href="#team" data-scroll>MEET THE TEAM</a></li>
+                <li><a href="#home" data-scroll>Home</a></li>
+                <li><a href="#overview" data-scroll>Overview</a></li>
+                <li><a href="#data" data-scroll>Data</a></li>
+                <li><a href="#methods" data-scroll>Methods</a></li>
+                <li><a href="#results" data-scroll>Results</a></li>
+                <li><a href="#team" data-scroll>Meet the Team</a></li>
             </ul>
         </nav>
         <main>
@@ -68,12 +71,12 @@
                         <div class="text-content">
                             <div>
                                 <p>
-                                    The number of registered marriages in the Philippines have steadily declined over the past five years, falling by 7.8% from 2022 to 2023 alone. [1] The COVID-19 pandemic dealt a major blow to these numbers, bringing 2020 figures to their lowest level since 1970. [2]
+                                    The number of registered marriages in the Philippines have steadily declined over the past five years, falling by 7.8% from 2022 to 2023 alone. <a href="https://psa.gov.ph/statistics/vital-statistics/node/1684065408" target="_blank">[1]</a> The COVID-19 pandemic dealt a major blow to these numbers, bringing 2020 figures to their lowest level since 1970. <a href="https://psa.gov.ph/content/registered-marriages-philippines-2022" target="_blank">[2]</a>
                                 </p>
                             </div>
                             <div>
                                 <p>
-                                    At the same time, latest data indicates that the number of registered births decreased by 17.2% percent from 2014 to 2023. [3] 
+                                    At the same time, latest data indicates that the number of registered births decreased by 17.2% percent from 2014 to 2023. <a href="https://psa.gov.ph/content/registered-live-births-philippines-2023" target="_blank">[3]</a> 
                                 </p>
                             </div>
                             <div>
@@ -83,7 +86,7 @@
                             </div>
                             <div>
                                 <p>
-                                    By the end of 2024, 63% of Filipino families considered themselves poor, with half stating they could not afford a healthy diet. [4]
+                                    By the end of 2024, 63% of Filipino families considered themselves poor, with half stating they could not afford a healthy diet. <a href="https://newsinfo.inquirer.net/2022607/sws-self-rated-poverty-at-63-highest-since-03" target="_blank">[4]</a>
                                 </p>
                             </div>
                             <div>
@@ -93,7 +96,7 @@
                             </div>
                             <div>
                                 <p>
-                                    In parallel, crime rates continue to fluctuate, influenced by both real-world changes and modifications in reporting systems. While efforts in crime prevention and shifts in data collection have affected the numbers, [5] [6] its trends regardless reflect the pressures that communities face.
+                                    In parallel, crime rates continue to fluctuate, influenced by both real-world changes and modifications in reporting systems. While efforts in crime prevention and shifts in data collection have affected the numbers, <a href="https://pia.gov.ph/pnp-reports-crime-drop-by-26-76-highlights-social-medias-impact/" target="_blank">[5]</a> <a href="https://web.senate.gov.ph/publications/AAG%202013-05%20-%20Crime%20Statistics.pdf" target="_blank">[6]</a> its trends regardless reflect the pressures that communities face.
                                 </p>
                             </div>
                             <div>
@@ -218,66 +221,173 @@
                     <div>
                         <h2>DATA COLLECTION</h2>
                     </div>
-                    <div></div>
-                    <div>
+                    <div class="button-container">
                         <div class="collapsible-container">
-                            <button class="collapsible">Crime Rate Dataset</button>
-                            <div class="collapsible-content">
-                                <div>
-                                    <div>
-                                        <div class="section-label">DESCRIPTION</div>
-                                    </div>
-                                    <div class="text-content">
+                            <div>
+                                <button class="collapsible">Crime Rate Dataset</button>
+                                <div class="collapsible-content">
+                                    <div></div>
+                                    <div class="col-con-container" style>
                                         <div>
-                                            <p>The Crime Rate dataset consists of monthly crime counts per region from January 2022 to September 2023. Each row is uniquely identified by the first two columns: the time period (month and year) and office, which indicates the corresponding Philippine National Police regional office. These offices are labeled by region number.</p>
+                                            <div class="section-label">DESCRIPTION</div>
                                         </div>
-                                        <div>
-                                            <p>The dataset divides crimes into four primary classifications: index crimes, non-index crimes, crimes due to reckless imprudence, and quasi offenses.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <div class="section-label">Definitions</div>
-                                    </div>
-                                    <div class ="text-content">
-                                        <div>
-                                            <p>The classification of the type of crimes found in the dataset follows definitions used by the Philippine National Police and related government sources</p>
-                                        </div>
-                                        <div>
-                                            <p>The differentiation between index and non-index crimes is based on the Senate Economic Planning Office&apos;s <span>crime statistics report</span> from June 2013:</p>
-                                        </div>
-                                        <div>
-                                            <p>“For statistical purposes and to create a standardized definition of crime classification, crime is further divided into index and non-index crimes. Index crimes, as defined by the Philippine National Police (PNP), involve crimes against persons such as murder, homicide, physical injury and rape, and crimes against property such as robbery, theft, carnapping/carjacking and cattle rustling. Non-index crimes, on the other hand, are violations of special laws such as illegal logging or local ordinances.”</p>
-                                        </div>  
-                                        <div>
-                                            <p>Moreover, according to the <span>Crime Information, Reporting and Analysis System documentation,</span> index crimes refer specifically to consummated focus crimes and special complex crimes. Meanwhile, focus crimes in attempted and frustrated stages fall under non-index crimes.</p>
-                                        </div>
-                                        <div>
-                                            <p>A special complex crime, usually referred to as a composite crime, is one in which two or more offenses are treated by the law as single. The Revised Penal Code defines eight types of special complex crimes: kidnapping with homicide, kidnapping with rape, among others.</p>
-                                        </div>
-                                        <div>
-                                            <p>The above descriptions are elaborated on in the succeeding parts.</p>
+                                        <div class="text-content">
+                                            <div>
+                                                <p>The Crime Rate dataset consists of monthly crime counts per region from January 2022 to September 2023. Each row is uniquely identified by the first two columns: the time period (month and year) and office, which indicates the corresponding Philippine National Police regional office. These offices are labeled by region number.</p>
+                                            </div>
+                                            <div>
+                                                <p>The dataset divides crimes into four primary classifications: index crimes, non-index crimes, crimes due to reckless imprudence, and quasi offenses.</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div>
-                                    <div>
-                                        <div class="section-label">Index crimes</div>
+                                    <div class="col-con-container">
+                                        <div>
+                                            <div class="section-label">Definitions</div>
+                                        </div>
+                                        <div class ="text-content">
+                                            <div>
+                                                <p>The classification of the type of crimes found in the dataset follows definitions used by the Philippine National Police and related government sources</p>
+                                            </div>
+                                            <div>
+                                                <p>The differentiation between index and non-index crimes is based on the Senate Economic Planning Office&apos;s <span>crime statistics report</span> from June 2013:</p>
+                                            </div>
+                                            <div>
+                                                <p>“For statistical purposes and to create a standardized definition of crime classification, crime is further divided into index and non-index crimes. Index crimes, as defined by the Philippine National Police (PNP), involve crimes against persons such as murder, homicide, physical injury and rape, and crimes against property such as robbery, theft, carnapping/carjacking and cattle rustling. Non-index crimes, on the other hand, are violations of special laws such as illegal logging or local ordinances.”</p>
+                                            </div>  
+                                            <div>
+                                                <p>Moreover, according to the <a href="https://psa.gov.ph/sites/default/files/ncs/paper-presentations-manuscripts/Crime%20Information%2C%20Reporting%20and%20Analysis%20System%20%28CIRAS%29.pdf" target="_blank">Crime Information, Reporting and Analysis System documentation,</a> index crimes refer specifically to consummated focus crimes and special complex crimes. Meanwhile, focus crimes in attempted and frustrated stages fall under non-index crimes.</p>
+                                            </div>
+                                            <div>
+                                                <p>A special complex crime, usually referred to as a composite crime, is one in which two or more offenses are treated by the law as single. The Revised Penal Code defines eight types of special complex crimes: kidnapping with homicide, kidnapping with rape, among others.</p>
+                                            </div>
+                                            <div>
+                                                <p>The above descriptions are elaborated on in the succeeding parts.</p>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div>
-
+                                    <div class="col-con-container">
+                                        <div>
+                                            <div class="section-label">Index Crimes</div>
+                                        </div>
+                                        <div class="text-content">
+                                            <div>
+                                                <p>Index crimes (crimes against persons and property) are grouped into focus crimes and total special complex crimes.</p>
+                                            </div>
+                                            <div>
+                                                <p>Under focus crimes, the dataset provided monthly counts of the following for each regional office:</p>
+                                            </div>
+                                            <div class="crime-type-container-row">
+                                                <div class="crime-type-container-col">
+                                                    <div class="crime-type-elements">
+                                                        Murder
+                                                    </div>
+                                                    <div class="crime-type-elements">
+                                                        Homicide
+                                                    </div>
+                                                    <div class="crime-type-elements">
+                                                        Physical Injury
+                                                    </div>
+                                                    <div class="crime-type-elements">
+                                                        Rape
+                                                    </div>
+                                                    <div class="crime-type-elements">
+                                                        Robbery
+                                                    </div>
+                                                </div>
+                                                <div class="crime-type-container-col">
+                                                    <div class="crime-type-elements">
+                                                        Theft
+                                                    </div>
+                                                    <div class="crime-type-elements">
+                                                        Carnapping MV (motor vehicles &dash; four-wheeled or up)
+                                                    </div>
+                                                    <div class="crime-type-elements">
+                                                        Carnapping MC (motorcycles)
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>Moreover, the data includes the total number of focus crimes that have been cleared and solved. Under special complex crimes, their total count, along with the number of ones that have been cleared and solved, are indicated.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-con-container">
+                                        <div>
+                                            <div class="section-label">Non-Index Crimes</div>
+                                        </div>
+                                        <div class="text-content">
+                                            <div>
+                                                <p>Under non-index crimes, the dataset recorded the following counts per month and regional office:</p>
+                                            </div>
+                                            <div class="crime-type-container-row">
+                                                <div class="crime-type-container-col">
+                                                    <div class="crime-type-elements">
+                                                        Violation of special laws
+                                                    </div>
+                                                    <div class="crime-type-elements">
+                                                        Attempted stages focus crimes
+                                                    </div>
+                                                    <div class="crime-type-elements">
+                                                        Other non-index crimes
+                                                    </div>
+                                                    <div class="crime-type-elements">
+                                                        Frustrated stages focus crimes
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <p>The total number of cleared and solved non-index crimes are also part of the dataset.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-con-container">
+                                        <div>
+                                            <div class="section-label">Reckless Imprudence and Other Quasi Offenses</div>
+                                        </div>
+                                        <div class="text-content">
+                                            <div>
+                                                <p>Monthly regional counts of reckless imprudence resulting in homicide, physical injury, and damage to property are included in the dataset, as well as the total count of cleared and solved crimes of this type. </p>
+                                            </div>
+                                            <div>
+                                                <p>Counts of crimes that the Philippine National Police categorized as “other quasi offenses,” as well as the total number of cleared and solved crimes of this type, are also part of the dataset.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-con-container">
+                                        <div>
+                                            <div class="section-label">Collection</div>
+                                        </div>
+                                        <div class="text-content">
+                                            <div>
+                                                <p>The crime statistics were collected from the <a href="https://pnp.gov.ph/crime-statistics/" target="_blank">Philippine National Police website</a>, specifically from the page entitled Crime Statistics. This page provides, in PDF form, nationwide crime statistics by month from January 2022 to September 2023 (the latest data available at the time of collection).</p>
+                                            </div>
+                                            <div>
+                                                <p>Each PDF file contains two (2) pages, with the first presenting information on index crimes and non-index crimes, which contribute to the computation of the Peace and Order Indicator (POI). The second page, on the other hand, contains information on crimes used to compute the Public Safety Indicator (PSI). A third table summarizes the total crimes.</p>
+                                            </div>
+                                            <div>
+                                                <p>By compiling and converting tables, the data from these PDFs were collated into a unified sheet, seen in the “Crime Rate” tab.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-con-container">
+                                        <div>
+                                            
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div>
-                            <button class="collapsible">Birth and Marriage Dataset</button>
-                            <div class="collapsible-content">
-                                <p>lorem ipsum</p>
+                        <div class="collapsible-container">
+                            <div>
+                                <button class="collapsible">Birth and Marriage Dataset</button>
+                                <div class="collapsible-content">
+                                    <div></div>
+                                    <div>
+                                        <p>lorem ipsum</p>
+                                    </div>     
+                                </div>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </article>
@@ -391,7 +501,7 @@
                         </div>
                         <div class="team-member">   <!-- KARL -->
                             <div class="member-picture">
-                                <img src="elements/images/IMG_38521.jpeg">
+                                <img src="elements/images/IMG_3852.jpeg">
                             </div>
                             <div class="member-caption">
                                 <div>
@@ -399,7 +509,7 @@
                                 </div>
                                 <div>
                                     <p>
-                                        I'm a 3rd year BS Computer Science student from the University of the Philippines-Diliman, interested in the fields of Cybersecurity and Web Development. 
+                                        I'm a 3rd year BS Computer Science student from the University of the Philippines-Diliman, interested in the fields of Cybersecurity and Web Development.
                                     </p>
                                 </div>
                             </div>
