@@ -81,6 +81,15 @@ html{
     margin-bottom: 10px;
   }
 
+  .section-header h2{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+    color: #ff4b4b;
+    font-style: normal;
+    margin: 0;
+
+  }
+
   .hypo-title{
     color: #ff8c8c;
     font-family: 'Agrandir-Bold', sans-serif;
@@ -92,10 +101,13 @@ html{
     color: #ff8c8c;
   }
 
+  .col-con-container h2{
+    font-family: 'bebas-neue', sans-serif;
+  }
+
   /* BG IMAGE */   
   .home-section, .team-section, .overview-section, .data-section{
-    background:
-      radial-gradient(ellipse at top, #560000, transparent), radial-gradient(ellipse at bottom, #000000);
+    background: radial-gradient(ellipse at top, #560000, transparent), radial-gradient(ellipse at bottom, #000000);
   }
 
   /* Navigation Bar */
@@ -133,9 +145,6 @@ html{
   nav ul li a:active {
     color: #560000;
   }
-
-
-  
 
 
   /* home section*/
@@ -200,10 +209,12 @@ html{
   }
 
   .overview-container{
-    padding: 100px 200px;
+    padding: 100px 250px;
 
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 100px;
   }
 
@@ -276,7 +287,7 @@ html{
   /* data-section */
   .data-section{
     min-height: 100vh;
-    padding: 100px 200px;
+    padding: 100px 250px;
   }
 
   .data-container{
@@ -284,6 +295,80 @@ html{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .data-section-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+  }
+
+  .data-collection-container{
+    display: flex;  
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    padding: 20px 0;
+  }
+
+  .data-collection-notes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .data-collection-notes p{
+    font-size: 10px;;
+  }
+
+  .notes-logo {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    align-items: top;
+  }
+
+   .notes-logo .notes-tooltip{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    opacity: 0;
+
+    position: absolute;
+    bottom: 40px;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: normal;
+    min-width: 230px;
+  }
+
+  .notes-logo:hover .notes-tooltip{
+    opacity: 1;
+  }
+
+  .notes-logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+  }
+
+  .notes-logo-container svg{
+    fill: #f6f6f6;
+    height: 25px;
+    width: 25px;
+  }
+
+  .notes-logo-container svg:hover{
+    fill: #6d6d6d;
   }
 
   .button-container{
@@ -315,7 +400,7 @@ html{
 
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     padding-top: 5px;
   }
 
@@ -325,7 +410,10 @@ html{
   }
 
   .col-con-container{
-    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+
     padding: 2rem;
     border-radius: 1.5rem;
 
@@ -365,11 +453,15 @@ html{
   .crime-type-elements:hover{
     transform: scale(1.15);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    background-color: #000;
+    color: #ff4b4b;
   }
 
   /* methods-section */
   .methods-section{
     min-height: 100vh;
+    padding: 100px 250px;
   }
 
   /* results-section */
@@ -468,7 +560,7 @@ html{
     text-decoration: none;
   }
 
-  svg, .ig-logo-path{
+  .member-plugs svg, .ig-logo-path{
     fill: #a6a6a6;
   }
 
