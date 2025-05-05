@@ -538,11 +538,29 @@ html{
     transition: all 0.3s ease;
   }
 
-  .plot-button:hover{
+  .eda-button{
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    color: transparent;
+    padding: 20px 50px;
+
+    color: black;
+    border-radius: 2.5rem;
+    transition: all 0.3s ease;
+  }
+
+  .plot-button:hover, .eda-button:hover{
     background-color: #ff4b4b;
     color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: scale(1.2);
+  }
+
+  .eda-button:hover{
+    background-color: #ff4b4b;
+    color: white;
+    box-shadow: 0 0 10px rgba(255, 75, 75, 0.5);
+    transform: scale(1.5);
   }
 
   /* methods-section */
