@@ -535,6 +535,7 @@ html{
   /* results-section */
   .results-section{
     min-height: 100vh;
+    padding: 100px 250px;
   }
 
   /* team-section */
