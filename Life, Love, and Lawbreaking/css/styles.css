@@ -514,7 +514,7 @@ html{
     text-decoration: none;
     border: 1px solid white;
     padding: 10px 20px;
-    border-radius: 20px;;
+    border-radius: 20px;
     display: inline-block; 
     transition: all 0.3s ease;
   }
@@ -522,6 +522,25 @@ html{
   .dataset-button:hover{
     background-color: white;
     color: #ff4b4b;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+  }
+
+  .plot-button{
+    text-decoration: none;
+    display: inline-block;
+    background-color: white;
+    color: transparent;
+    padding: 10px 30px;
+
+    color: black;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+
+  .plot-button:hover{
+    background-color: #ff4b4b;
+    color: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: scale(1.2);
   }
