@@ -302,210 +302,431 @@
                         <div class="section-header">
                             <h2>DATA EXPLORATION</h2>
                         </div>
-                        <div>   
-                            <p>To carry out our analysis, we gathered four datasets that directly support our research questions.</p>
-                        </div> 
                     </div>
-                    <div class="button-container">
-                        <div class="collapsible-container">
-                            <div>
+                    <!--DATA UNDERSTANDING-->
+                    <div class="data-understanding">
+                        <div>
+                            <h2>Data Understanding</h2>
+                            <p>Good research begins with understanding the data. Let us provide a closer look at the datasets that shape our findings.</p>
+                        </div>
+                        <div class="button-container">
+                            <div class="collapsible-container">
                                 <button class="collapsible">Crime Rate Dataset</button>
                                 <div class="collapsible-content">
                                     <div></div>
                                     <div class="col-con-container" style>
-                                        <div>
-                                            <div class="section-label">DESCRIPTION</div>
-                                        </div>
                                         <div class="text-content">
                                             <div>
-                                                <p>The Crime Rate dataset consists of monthly crime counts per region from January 2022 to September 2023. Each row is uniquely identified by the first two columns: the time period (month and year) and office, which indicates the corresponding Philippine National Police regional office. These offices are labeled by region number.</p>
+                                                <p>The Crime dataset contains 378 rows and 66 columns.</p>
                                             </div>
                                             <div>
-                                                <p>The dataset divides crimes into four primary classifications: index crimes, non-index crimes, crimes due to reckless imprudence, and quasi offenses.</p>
+                                                <p>Each row is uniquely identified by:</p>
+                                            </div>
+                                            <div>
+                                                <li>Source Name
+                                                    <ul>
+                                                        <li>The filename of the PDF from which the data was extracted.</li>
+                                                        <li>Type of Data: Qualitative, Discrete, Nominal Level</li>
+                                                        <li>Note: This column also denotes the month and year the crime data represents, which is ordinal in nature.</li>
+                                                    </ul>  
+                                                </li>       
+                                                <li>OFFICE
+                                                    <ul>
+                                                        <li>The name of the PNP regional office that reported the data.</li>
+                                                        <li>Type of Data: Qualitative, Discrete, Nominal Level</li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <p>The remaining columns are aggregated from three tables present in each PDF:</p>
+                                            </div>
+                                            <div>
+                                                <ol>
+                                                    <li>Index and non-index crimes</li>
+                                                    <li>Public safety-related crimes</li>
+                                                    <li>A summary table</li>
+                                                </ol>
+                                            </div>
+                                            <div>
+                                                <p>These columns include:</p>
+                                            </div>
+                                            <div>
+                                                <li>Crime Types
+                                                    <ul>
+                                                        <li>Type of Data: Qualitative, Discrete, Ratio Level</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Derived Totals
+                                                    <ul>
+                                                        <li>Type of Data: Qualitative, Discrete, Ratio Level</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Derived Rates
+                                                    <ul>
+                                                        <li>Type of Data: Qualitative, Continuous, Ratio Level</li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <p>Further technical details are available in the <a href="https://psa.gov.ph/sites/default/files/ncs/paper-presentations-manuscripts/Crime%20Information%2C%20Reporting%20and%20Analysis%20System%20%28CIRAS%29.pdf" target="_blank">Crime Information, Reporting and Analysis System (CIRAS)</a> documentation and the 2013 <a href="https://web.senate.gov.ph/publications/AAG%202013-05%20-%20Crime%20Statistics.pdf" target="_blank">crime statistics report</a> published by the Senate Economic Planning Office (SEPO).</p>
+                                            </div>
+                                            <div>
+                                                <p>This dataset provides a comprehensive snapshot of reported crimes across Philippine regions, capturing both crime types and derived performance indicators of law enforcement.</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="col-con-container">
-                                        <div>
-                                            <div class="section-label">Definitions</div>
-                                        </div>
-                                        <div class ="text-content">
-                                            <div>
-                                                <p>The classification of the type of crimes found in the dataset follows definitions used by the Philippine National Police and related government sources</p>
-                                            </div>
-                                            <div>
-                                                <p>The differentiation between index and non-index crimes is based on the Senate Economic Planning Office&apos;s <span>crime statistics report</span> from June 2013:</p>
-                                            </div>
-                                            <div>
-                                                <p>“For statistical purposes and to create a standardized definition of crime classification, crime is further divided into index and non-index crimes. Index crimes, as defined by the Philippine National Police (PNP), involve crimes against persons such as murder, homicide, physical injury and rape, and crimes against property such as robbery, theft, carnapping/carjacking and cattle rustling. Non-index crimes, on the other hand, are violations of special laws such as illegal logging or local ordinances.”</p>
-                                            </div>  
-                                            <div>
-                                                <p>Moreover, according to the <a href="https://psa.gov.ph/sites/default/files/ncs/paper-presentations-manuscripts/Crime%20Information%2C%20Reporting%20and%20Analysis%20System%20%28CIRAS%29.pdf" target="_blank">Crime Information, Reporting and Analysis System documentation,</a> index crimes refer specifically to consummated focus crimes and special complex crimes. Meanwhile, focus crimes in attempted and frustrated stages fall under non-index crimes.</p>
-                                            </div>
-                                            <div>
-                                                <p>A special complex crime, usually referred to as a composite crime, is one in which two or more offenses are treated by the law as single. The Revised Penal Code defines eight types of special complex crimes: kidnapping with homicide, kidnapping with rape, among others.</p>
-                                            </div>
-                                            <div>
-                                                <p>The above descriptions are elaborated on in the succeeding parts.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-con-container">
-                                        <div>
-                                            <div class="section-label">Index Crimes</div>
-                                        </div>
-                                        <div class="text-content">
-                                            <div>
-                                                <p>Index crimes (crimes against persons and property) are grouped into focus crimes and total special complex crimes.</p>
-                                            </div>
-                                            <div>
-                                                <p>Under focus crimes, the dataset provided monthly counts of the following for each regional office:</p>
-                                            </div>
-                                            <div class="crime-type-container-row">
-                                                <div class="crime-type-container-col">
-                                                    <div class="crime-type-elements">
-                                                        Murder
-                                                    </div>
-                                                    <div class="crime-type-elements">
-                                                        Homicide
-                                                    </div>
-                                                    <div class="crime-type-elements">
-                                                        Physical Injury
-                                                    </div>
-                                                    <div class="crime-type-elements">
-                                                        Rape
-                                                    </div>
-                                                    <div class="crime-type-elements">
-                                                        Robbery
-                                                    </div>
-                                                </div>
-                                                <div class="crime-type-container-col">
-                                                    <div class="crime-type-elements">
-                                                        Theft
-                                                    </div>
-                                                    <div class="crime-type-elements">
-                                                        Carnapping MV (motor vehicles &dash; four-wheeled or up)
-                                                    </div>
-                                                    <div class="crime-type-elements">
-                                                        Carnapping MC (motorcycles)
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <p>Moreover, the data includes the total number of focus crimes that have been cleared and solved. Under special complex crimes, their total count, along with the number of ones that have been cleared and solved, are indicated.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-con-container">
-                                        <div>
-                                            <div class="section-label">Non-Index Crimes</div>
-                                        </div>
-                                        <div class="text-content">
-                                            <div>
-                                                <p>Under non-index crimes, the dataset recorded the following counts per month and regional office:</p>
-                                            </div>
-                                            <div class="crime-type-container-row">
-                                                <div class="crime-type-container-col">
-                                                    <div class="crime-type-elements">
-                                                        Violation of special laws
-                                                    </div>
-                                                    <div class="crime-type-elements">
-                                                        Attempted stages focus crimes
-                                                    </div>
-                                                    <div class="crime-type-elements">
-                                                        Other non-index crimes
-                                                    </div>
-                                                    <div class="crime-type-elements">
-                                                        Frustrated stages focus crimes
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div>
-                                                <p>The total number of cleared and solved non-index crimes are also part of the dataset.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-con-container">
-                                        <div>
-                                            <div class="section-label">Reckless Imprudence and Other Quasi Offenses</div>
-                                        </div>
-                                        <div class="text-content">
-                                            <div>
-                                                <p>Monthly regional counts of reckless imprudence resulting in homicide, physical injury, and damage to property are included in the dataset, as well as the total count of cleared and solved crimes of this type. </p>
-                                            </div>
-                                            <div>
-                                                <p>Counts of crimes that the Philippine National Police categorized as “other quasi offenses,” as well as the total number of cleared and solved crimes of this type, are also part of the dataset.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-con-container">
-                                        <div>
-                                            <div class="section-label">Collection</div>
-                                        </div>
-                                        <div class="text-content">
-                                            <div>
-                                                <p>The crime statistics were collected from the <a href="https://pnp.gov.ph/crime-statistics/" target="_blank">Philippine National Police website</a>, specifically from the page entitled Crime Statistics. This page provides, in PDF form, nationwide crime statistics by month from January 2022 to September 2023 (the latest data available at the time of collection).</p>
-                                            </div>
-                                            <div>
-                                                <p>Each PDF file contains two (2) pages, with the first presenting information on index crimes and non-index crimes, which contribute to the computation of the Peace and Order Indicator (POI). The second page, on the other hand, contains information on crimes used to compute the Public Safety Indicator (PSI). A third table summarizes the total crimes.</p>
-                                            </div>
-                                            <div>
-                                                <p>By compiling and converting tables, the data from these PDFs were collated into a unified sheet, seen in the “Crime Rate” tab.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-con-container">
-                                        <div>
-                                           <div class="section-label">Size</div>
-                                        </div>
-                                        <div class="text-content">
-                                            <div>
-                                                <p>The crime dataset contains 357 rows (header rows not included) and 26 columns. The columns are as follows:</p>
-                                            </div>
-                                            <div>
-                                                <div>
-                                                    <div>
-                                                        index crimes
-                                                    </div>
-                                                    <div>
-                                                        non-index crimes
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <div>
-                                                        Reckless Imprudence Resulting to
-                                                    </div>
-                                                    <div>
-                                                        Other Quasi Offenses
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    </div>  
+                                    <div></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="collapsible-container">
-                            <div>
+                            <div class="collapsible-container">
                                 <button class="collapsible">Birth and Marriage Dataset</button>
                                 <div class="collapsible-content">
                                     <div></div>
-                                    <div>
-                                        <p>lorem ipsum</p>
-                                    </div>     
+                                    <div class="col-con-container" style>
+                                        <div class="text-content">
+                                            <div>
+                                                <p>The Birth dataset consists of 405 rows and 16 columns, while the Marriage dataset includes 402 rows and 16 columns. </p>
+                                            </div>
+                                            <div>
+                                                <p>Since both datasets come from the same source, they share a nearly identical structure, allowing them to be seamlessly merged for preprocessing.</p>
+                                            </div>
+                                            <div>
+                                                <p>Each row is uniquely identified by:</p>
+                                            </div>
+                                            <div>
+                                                <li>Location Column
+                                                    <ul>
+                                                        <li>In the Birth dataset: PLACE OF USUAL RESIDENCE</li>
+                                                        <li>In the Marriage dataset: PLACE OF OCCURRENCE</li>
+                                                        <li>Both refer to the same concept: the geographic area where the event is associated.</li>
+                                                        <li>Type of Data: Qualitative, Discrete, Nominal level</li>
+                                                    </ul>  
+                                                </li>       
+                                                <li>Type of Place
+                                                    <ul>
+                                                        <li>Identifies whether the row refers to a region, province, or highly urbanized city.</li>
+                                                        <li>Type of Data: Qualitative, Discrete, Nominal level</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Year
+                                                    <ul>
+                                                        <li>The year of reporting.</li>
+                                                        <li>Type of Data: Quantitative, Discrete, Ordinal level</li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <p>The remaining columns cover event counts:</p>
+                                            </div>
+                                            <div>
+                                                <li>Total
+                                                    <ul>
+                                                        <li>The overall total of registered events.</li>
+                                                        <li>Type of Data: Quantitative, Discrete, Ratio Level</li>
+                                                    </ul>
+                                                </li>
+                                                <li>January to December columns
+                                                    <ul>
+                                                        <li>The monthly total of registered events.</li>
+                                                        <li>Type of Data: Quantitative, Discrete, Ratio Levels</li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <p>These datasets offer a structured view of vital events across regions and time, helping trace patterns in how Filipinos form families over recent years.</p>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div></div>
+                                </div>
+                            </div>
+                            <div class="collapsible-container">
+                                <button class="collapsible">Urbanization Dataset</button>
+                                <div class="collapsible-content">
+                                    <div></div>
+                                    <div class="col-con-container" style>
+                                        <div class="text-content">
+                                            <div>
+                                                <p>The Urbanization dataset has 135 rows and 8 columns.</p>
+                                            </div>
+                                            <div>
+                                                <p>Each row is uniquely identified by:</p>
+                                            </div>
+                                            <div>
+                                                <li>REGION, PROVINCE, AND HIGHLY URBANIZED CITY
+                                                    <ul>
+                                                        <li>The geographic unit associated with the statistics.</li>
+                                                        <li>Type of Data: Qualitative, Discrete, Nominal level</li>
+                                                    </ul>  
+                                                </li>       
+                                                <li>Type of Place
+                                                    <ul>
+                                                        <li>Classifies each entry as a region, province, or highly urbanized city.</li>
+                                                        <li>Type of Data: Qualitative, Discrete, Nominal level</li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <p>The remaining columns describe population and urbanization measures:</p>
+                                            </div>
+                                            <div>
+                                                <li>Total Population Columns
+                                                    <ul>
+                                                        <li>The total number of individuals living in the geographic area.</li>
+                                                        <li>Type of Data: Quantitative, Discrete, Ratio Level</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Urban Population Columns
+                                                    <ul>
+                                                        <li>The number of individuals living in areas classified as urban within the geographic unit.</li>
+                                                        <li>Type of Data: Quantitative, Discrete, Ratio Level</li>
+                                                    </ul>   
+                                                </li>
+                                                <li>Urbanization Percentages
+                                                    <ul>
+                                                        <li>The proportion of the total population living in urban areas, expressed as a percentage.</li>
+                                                        <li>Type of Data: Quantitative, Continuous, Ratio Level</li>
+                                                    </ul>   
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <p>This dataset provides a static but essential snapshot of the distribution between urban and rural living spaces across the Philippines and remains the most recent and complete urbanization reference as of the time of this study.</p>
+                                            </div>
+                                            <div>
+                                                <p>We compiled the key details of each dataset into the below summary:</p>
+                                            </div>
+                                            <div style="display: flex; justify-content: center; align-items: center;";>
+                                                <style type="text/css">
+                                                    .tg  {border-collapse:collapse;border-spacing:0;}
+                                                    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                                      overflow:hidden;padding:10px 5px;word-break:normal;}
+                                                    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                                      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                                    .tg .tg-il3a{border-color:#ffffff;color:#ffffff;text-align:left;vertical-align:top}
+                                                    </style>
+                                                    <table class="tg"><thead>
+                                                      <tr>
+                                                        <th class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Dataset</span></th>
+                                                        <th class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Size</span></th>
+                                                        <th class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Time Covered</span></th>
+                                                        <th class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Identifiers</span></th>
+                                                        <th class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Source</span></th>
+                                                      </tr></thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Crime</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">378 × 66</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">1/2022 - 9/2023</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Source Name, OFFICE</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">PNP PDFs</span></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Birth</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">405 × 16</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">1/2022 - 10/2024 (provisional)</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Place, Year</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">PSA Excel Files</span></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Marriage</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">402 × 16</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">1/2022 - 10/2024 (provisional)</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Place, Year</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">PSA Excel Files</span></td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Urbanization</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">135 × 8</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">2020 (static)</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Place</span></td>
+                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">PSA Excel Files</span></td>
+                                                      </tr>
+                                                    </tbody></table>
+                                            </div>
+                                            <div>
+                                                <p>Now that we are more familiar with our data, we can now take a closer look at its nuances.</p>
+                                            </div>
+                                        </div>
+                                    </div>  
+                                    <div></div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!--DATA PREPARATION-->
+                    <div class="data-preparation">
+                        <div>
+                            <h2>Data Preparation</h2>
+                        </div>
+                        <div class="text-content">
+                            <div>
+                                <p>Raw data rarely comes ready for analysis. So, we must preprocess our datasets to lay the groundwork for accurate and reliable insights.</p>
+                            </div>
+                            <div>
+                                <p>To clean our datasets, we followed a general framework:</p>
+                            </div>
+                            <div>
+                                <ol>
+                                    <li>Format Refinement</li>
+                                    <li>Removal of Irrelevant Columns</li>
+                                    <li>Removal of Irrelevant Rows</li>
+                                    <li>Handling of Missing Values</li>
+                                    <li>Handling of Duplicate Values</li>
+                                    <li>Handling of Outliers</li>
+                                    <li>Final Adjustments</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="tab-container">
+                            <!-- Tab links -->
+                            <div class="tab">
+                                <button class="tablinks" onclick="openCity(event, 'Crime')" id="defaultOpen">Crime</button>
+                                <button class="tablinks" onclick="openCity(event, 'Birth and Marriage')">Birth and Marriage</button>
+                                <button class="tablinks" onclick="openCity(event, 'Urbanization')">Urbanization</button>
+                            </div>
+                            
+                            <!-- Tab content -->
+                            <div id="Crime" class="tabcontent">
+                                <div class="text-content">
+                                    <div>
+                                        <ol>
+                                            <li>Format Refinement
+                                                <ul>a. Renamed columns for consistent casing and clarity</ul>
+                                                <ul>b. Renamed the Source Name column to Year-Month</ul>
+                                                <ul>c. Renamed rows in the Year-Month column to reflect actual time periods</ul>
+                                                <ul>d. Renamed the Office column to Place</ul>
+                                                <ul>e. Renamed rows in the Place column to reflect actual Philippine regions</ul>
+                                            </li>
+                                            <li>Removal of Irrelevant Columns
+                                                <ul>a. Dropped all columns pertaining to derived totals and rates, except for the Average Monthly Crime Rate column</ul>
+                                            </li>
+                                            <li>Removal of Irrelevant Rows
+                                                <ul>a. Dropped rows where the Region column has the value TOTAL</ul>
+                                            </li>
+                                            <li>Handling of Outliers
+                                                <ul>a. Retained all outliers to preserve possible contextual significance</ul>
+                                            </li>
+                                            <li>Final Adjustments
+                                                <ul>a. Converted incorrectly flagged categorical columns into numerical type</ul>
+                                                <ul>b. Ordered rows by Year-Month</ul>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div id="Birth and Marriage" class="tabcontent">
+                                <div class="text-content">
+                                    <div>
+                                        <ol>
+                                            <li>Format Refinement
+                                                <ul>a. Standardized the location column</ul>
+                                                <ul>b. Reformatted the data to have a single Month column instead of twelve separate columns</ul>
+                                                <ul>c. Merged!</ul>
+                                                <ul>d. Converted incorrectly flagged categorical columns into numerical type</ul>
+                                                <ul>e. Combined Year and Month columns into a single Year-Month column</ul>
+                                            </li>
+                                            <li>Removal of Irrelevant Columns
+                                                <ul>a. Dropped rows where the location column has the value TOTAL</ul>
+                                                <ul>b. Dropped rows where the Type of Place column is not equal to Region
+                                                    <li>Dropped the Type of Place column</li>
+                                                </ul>
+                                            </li>
+                                            <li>Removal of Irrelevant Rows
+                                                <ul>a. Dropped rows from October 2024 onward</ul>
+                                                <ul>b. Filled the missing September 2024 value for BARMM in the Number of Registered Marriages column using the rounded mean of its September 2022 and 2023 values</ul>
+                                            </li>
+                                            <li>Handling of Outliers
+                                                <ul>a. Retained all outliers to preserve possible contextual significance</ul>
+                                            </li>
+                                            <li>Final Adjustments
+                                                <ul>a. Replaced all instances of MIMAROPA REGION in the location column with REGION IV-B (MIMAROPA)</ul>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="Urbanization" class="tabcontent">
+                                <div class="text-content">
+                                    <div>
+                                        <ol>
+                                            <li>Format Refinement
+                                                <ul>a. Removed every column except identifiers and the Percent Urban - 2020 column</ul>
+                                            </li>
+                                            <li>Removal of Irrelevant Columns
+                                                <ul>a. Dropped rows where the Type of Place column is not equal to Region
+                                                    <li>Dropped the Type of Place column</li>
+                                                </ul>
+                                            </li>
+                                            <li>Final Adjustments
+                                                <ul>a. Renamed the Percent Urban - 2020 column to Percent Urban</ul>
+                                                <ul>b. Renamed the REGION, PROVINCE, AND HIGHLY URBANIZED CITY column to Place</ul>
+                                                <ul>c. Replaced all instances of MIMAROPA REGION in the location column with REGION IV-B (MIMAROPA)</ul>
+                                                <ul>d. Replaced all instances of REGION XIII (CARAGA) in the location column with REGION XIII (Caraga)</ul>
+                                            </li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-content" style="text-align: center;">
+                                <p>View how each dataset was preprocessed in detail:</p>
+                            </div>
+                            <div class="dataset-links-container">
+                                <div>
+                                    <a class="dataset-button" href="https://colab.research.google.com/drive/12wGg2foxkWGmXR52syXzVq0HDJylhCtS?usp=sharing" target="_blank">Crime</a>
+                                </div>
+                                <div>
+                                    <a class="dataset-button" href="https://colab.research.google.com/drive/181gn1CTh4Hpsyj1N0fLFhq9ykRrUQqTk?usp=sharing" target="_blank">Birth and Marriage</a>
+                                </div>
+                                <div>
+                                    <a class="dataset-button" href="https://colab.research.google.com/drive/1uG7JmYpepFPA3Diu2iPhwoP8oRE-1jMn?usp=sharing" target="_blank">Urbanization</a>
+                                </div>
+                            </div>
+                            <div class="text-content" style="text-align: center;">
+                                <p>After individually preparing our datasets, we merged them into a consolidated dataset consisting of</p>
+                                <div style="width:3s00px; background-color: #272727; justify-items: center; margin: 0 auto; padding: 20px 30px; border-radius: 5px; font-family: monospace;">357 rows &times;  24 columns</div>
+                                <p>With our merged dataset finalized, the next step is to dissect the features that power our study.</p>
+                            </div>
+                            <div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--FEATURE UNDERSTANDING-->
+                    <div class="feature-understanding">
+                        <div>
+                            <h2>Feature Understanding</h2>
+                        </div>
+                        <div class="text-content">
+                            <div>
+                                <p>What do our features say?</p>
+                            </div>
+                            <div>
+                                <p>We zoom in on each one, interpret its quirks, and identify what insights they unlock.</p>
+                            </div>
+                        </div>
+                        <div>
+                            
+                        </div> 
+                    <div>
                 </div>
             </article>
     
             <article id="methods" class="methods-section">
-                METHODS
+                <div class="data-section-header">
+                    <div class="section-header">
+                        <h2>METHODS</h2>
+                    </div>
             </article>
     
             <article id="results" class="results-section">
-                RESULTS
+                <div class="data-section-header">
+                    <div class="section-header">
+                        <h2>RESULTS</h2>
+                    </div>
             </article>
     
             <article id="team" class="team-section">
@@ -571,7 +792,7 @@
                                 </div>
                                 <div>
                                     <p>
-                                        short introduction
+                                       
                                     </p>
                                 </div>
                             </div>
@@ -609,7 +830,7 @@
                         </div>
                         <div class="team-member">   <!-- KARL -->
                             <div class="member-picture">
-                                <img src="elements/images/IMG_3852.jpeg">
+                                <img src="elements/images/IMG_38521.jpeg">
                             </div>
                             <div class="member-caption">
                                 <div>
