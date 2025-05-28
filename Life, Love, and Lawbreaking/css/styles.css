@@ -54,18 +54,28 @@ html{
   body p{
     font-family:'Nunito', sans-serif;
     color: #ffffff;
-    font-size: 19px;
+    font-size: 18px;
+  }
+
+  .p_black{
+    color: #1D1616;
   }
 
   .text-content{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    text-align: justify;
   }
 
   .text-content p {
     color: #ffffff;
   }
+
+  .text-content .p_black{
+    color: #1D1616;
+  }
+
 
   .overview-section h2, .data-section h2{
     font-family: 'Agrandir-Bold', sans-serif;
@@ -99,6 +109,7 @@ html{
     color: #ff8c8c;
     font-family: 'Agrandir-Bold', sans-serif;
     font-size: 20px;
+    margin-bottom: 5px;
   }
 
   .prob-sol-text h2{
@@ -112,20 +123,30 @@ html{
 
   /* BG IMAGE */   
   .home-section, .overview-section, .data-section, .methods-section, .results-section, .team-section{
-    background: radial-gradient(ellipse at top, #560000, transparent), radial-gradient(ellipse at bottom, #000000);
+      /*radial-gradient(ellipse, #8E1616 40%, transparent 70%),
+      radial-gradient(ellipse at bottom, #D84040); */
+      background-image: url('../elements/images/gggrain.svg');
   }
 
   /* Navigation Bar */
+  .nav-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
   #navbar {
     position: fixed;
-    width: 100%;
-    padding: 15px 0 15px 0;
+    padding: 15px 50px;
     z-index: 1000;
-    transition: top 0.2s;
+    transition: top 0.2s ease-in-out;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    top: 20px; /* visible position */
+}
 
-    -webkit-backdrop-filter: blur(8px);
-    backdrop-filter: blur(8px);
-    background-color: rgba(0, 0, 0, 0.5);
+  #navbar.hide {
+      top: -100px; /* move it fully above the viewport */
   }
 
   nav ul {
@@ -138,7 +159,7 @@ html{
   nav ul li a {
     font-family: 'Nunito', sans-serif;
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
     font-weight: 500;
     font-size: 15px;
    }
@@ -154,12 +175,11 @@ html{
 
   /* home section*/
   .home-section {
-    min-height: 100vh;
+    min-height: 90vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     text-align: center;
-    padding: 100px 20px;
+    padding: 250px 20px 0;
   }
 
   .home-content h1 {
@@ -193,59 +213,23 @@ html{
   .overview-section{
     min-height: 100vh;
     color: #272727;
-  }
 
-  .overview-quote{
-    background-image: url(../elements/images/quote-pic.png);
-    background-size: cover;
-    height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column; 
     align-items: center;
-    font-style: italic;
-    padding: 0 20px 0;
 
-    box-shadow: inset 0 0 500px #000;
-  }
-
-  .overview-quote p{
-    color: #ffffff;
-    font-size: 35px;
+    padding: 0 20px;
   }
 
   .overview-container{
-    padding: 100px 250px;
-
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 100px;
-  }
-
-  .what-now{
-    background-image: url(../elements/images/whatnow-pic.png);
-    min-height: 100vh;
-    background-size: cover;
-
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    gap: 120px;
 
-    box-shadow: inset 0 0 500px #000;
-  }
+    padding: 80px 0 100px;
+    max-width: 70%;
 
-  .what-now h2{
-    font-size: 55px;
-    margin-bottom: 0;
-  }
-
-  .what-now p{
-    font-size: 25px;
-    font-weight: bold;
-    font-style: italic;
-    color: white;
   }
 
   .research-questions{
@@ -278,30 +262,43 @@ html{
 
   .hypothesis-container{
     display: flex;
+    flex-wrap: wrap;
+
     gap: 70px;  
     padding: 20px 0;
   }
 
   .hypothesis-content{
+    flex: 1 1 300px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: justify;
+
+    background-color: #eeeeee;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 2.5rem;
+    border-radius: 20px;
   }
 
   /* data-section */
   .data-section{
     min-height: 100vh;
-    padding: 100px 250px;
 
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
+    align-items: center;
+
+    padding: 100px 20px;
     gap: 50px;
   }
 
   .data-container{
     display: flex;
     flex-direction: column;
+    max-width: 80%;
 
     gap: 50px;
   }
@@ -360,7 +357,28 @@ html{
     min-width: 230px;
   }
 
-  .notes-logo:hover .notes-tooltip{
+  .notes-tooltip-urban{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+    opacity: 0;
+
+    position: absolute;
+    bottom: 40px;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: normal;
+    min-width: 230px;
+  }
+
+  .notes-logo:hover .notes-tooltip {
+    opacity: 1;
+  }
+
+  .notes-logo:hover .notes-tooltip-urban {
     opacity: 1;
   }
 
@@ -421,14 +439,16 @@ html{
   .col-con-container{
     display: flex;
     flex-direction: column;
-    flex: 2;
+    flex: 1;
 
     padding: 2rem;
     border-radius: 1.5rem;
-    margin: 0 10px;
 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 15px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    background-color: #862c2c;
+    
   }
 
   .data-understanding, .data-preparation{
@@ -441,7 +461,7 @@ html{
   }
 
   .data-understanding ol{
-   margin: 10px 0 5px 35px;
+   margin: 10px 0 100px 35px;
   }
 
   .data-understanding ul, .dataa-preparation ul{
@@ -488,7 +508,7 @@ html{
   }
 
   .tab button.active {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #862c2c;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
@@ -497,7 +517,7 @@ html{
     padding: 2rem;
     border-radius: 1.5rem;
 
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #862c2c;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
@@ -577,7 +597,7 @@ html{
 
   /* team-section */
   .team-section {
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -616,7 +636,8 @@ html{
     box-shadow: 0 0 20px #272727;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+
+    position: relative;
   }
 
   .team-member:hover{
@@ -656,6 +677,10 @@ html{
   .member-plugs{
     display: flex;
     padding: 15px 15px 10px 15px;
+
+    position: absolute;
+    bottom: 0
+
   }
 
   .member-plugs img{

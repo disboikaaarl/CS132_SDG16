@@ -14,7 +14,7 @@ document.querySelectorAll('a[data-scroll]').forEach(link => {
   });
 });
 
-// collapsible sections
+// Collapsible sections
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
@@ -32,56 +32,73 @@ for (i = 0; i < coll.length; i++) {
 
 // Wait for the page to load
 window.addEventListener('load', () => {
-  // Remove the loading screen
   const loadingScreen = document.querySelector('.loading-screen');
   if (loadingScreen) {
     loadingScreen.style.display = 'none';
   }
 });
 
-
-// navbar scroll behavior
+// Navbar scroll behavior (adjusted sensitivity)
 const navbar = document.getElementById('navbar');
 let lastScrollY = window.scrollY;
 let scrollingFromClick = false;
+const scrollThreshold = 10; // <-- Adjust this number to tune sensitivity
 
 // Detect nav link clicks
 document.querySelectorAll('#navbar a[href^="#"]').forEach(link => {
   link.addEventListener('click', (e) => {
     scrollingFromClick = true;
 
-    // Listen for scroll end (using timeout)
+    // Smooth scroll manually
+    e.preventDefault();
+    const targetId = link.getAttribute('href').substring(1);
+    const target = document.getElementById(targetId);
+
+    if (target) {
+      target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+
+    // Stop hiding navbar temporarily during scroll
     const scrollCheck = setInterval(() => {
-      if (Math.abs(window.scrollY - lastScrollY) < 2) {
+      const currentScrollY = window.scrollY;
+      if (Math.abs(currentScrollY - lastScrollY) < 2) {
         clearInterval(scrollCheck);
         setTimeout(() => {
           scrollingFromClick = false;
-        }, 150); // small buffer
+        }, 150);
       } else {
-        lastScrollY = window.scrollY;
+        lastScrollY = currentScrollY;
       }
     }, 100);
   });
 });
 
-// Scroll listener
+// Scroll listener with reduced sensitivity
 window.addEventListener('scroll', () => {
-  if (scrollingFromClick) return; // Don't hide navbar if scrolling from nav link
+  if (scrollingFromClick) return;
 
   const currentScrollY = window.scrollY;
+  const delta = currentScrollY - lastScrollY;
 
-  if (currentScrollY > lastScrollY && currentScrollY > 100) {
-    // Scrolling down
-    navbar.style.top = `-${navbar.offsetHeight}px`;
-  } else {
-    // Scrolling up
-    navbar.style.top = '0';
+  // Only act if movement is significant
+  if (Math.abs(delta) > scrollThreshold) {
+    if (delta > 0 && currentScrollY > 100) {
+      // Scrolling down — hide navbar
+      navbar.style.top = `-${navbar.offsetHeight + 20}px`;
+    } else {
+      // Scrolling up — show navbar
+      navbar.style.top = '20px'; // match your CSS
+    }
+
+    lastScrollY = currentScrollY;
   }
-
-  lastScrollY = currentScrollY;
 });
 
-// tab functionality
+
+// Tab functionality
 document.getElementById("defaultOpen").click();
 
 function openCity(evt, cityName) {
