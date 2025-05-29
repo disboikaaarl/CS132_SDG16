@@ -2,7 +2,6 @@
     background-color: #EEEEEE;
     width: 90%;
     border-radius: 50px;
-    padding: 1.5rem;
     position:relative;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
@@ -45,23 +44,26 @@
     background-color: #862c2c;
     width: 100%;
     border-radius: 30px;
-    padding: 2.5rem;
+    padding: 3rem;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     margin-top: 50px;
 
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 100px;
 }
 
+.feature-card h1{
+    margin-bottom: 5px;
+}
 .feature-card h2{
     margin: 0;
     color: #ff8c8c;
 }
 .feature-card p{
     color: #ffffff;
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 18px;
+    margin-bottom: 25px;
 }
 
 .mean-container {
@@ -90,14 +92,118 @@
     color: #1D1616;
 }
 
+.mean-item h2{
+    text-align: left;
+}
+
 .feature-card .label{
     font-size: 12px;
     color: gray;
+    text-align: center;
 }
 
 .plot-text .plot-class{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    color: #eee;;
+    color: #eee;
+    margin: 0;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+  padding: 20px;
+  max-width: 100%;
+}
+
+.grid-item {
+  background-color: #eeeeee;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  width: 100%;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  border-radius: 10px; /* optional for rounded corners */
+  object-fit: cover;   /* or `contain` depending on effect you want */
+}
+
+.feature-card .plot-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.plot-card{
+    background-color: #fff;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 20px 0 30px;
+}
+
+.plot-card img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+
+}
+
+.plot-card iframe{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.plots-container {
+  display: flex;
+  gap: 20px;
+  margin: 25px 0;
+  width: 100%;
+}
+
+.plots-items{
+    background-color: #fff;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin: 0 10px;
+}
+
+.plots-items img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+    border-radius: 2rem;;
+}
+
+.grouped_p{
+    margin-bottom: 25px;
+}
+.grouped_p p{
+    margin: 5px 0;
+}
+
+.grouped_p ol{
+    padding-left: 40px;
+}
+
+table{
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(0, 0, 0, 0.5);
+}

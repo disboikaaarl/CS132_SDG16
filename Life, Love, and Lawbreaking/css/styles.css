@@ -20,7 +20,7 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 9999;
   }
 
   .loading-spinner {
@@ -46,7 +46,13 @@ html{
   a{
     color: #ffffff;
   }
-  body, body h1, body button {
+
+  body{
+    font-family: 'Nunito', sans-serif;
+    color: #ffffff;
+    font-size: 18px;
+  }
+  body h1, body button {
     font-family:'Bebas Neue', sans-serif;
     color: #ffffff;
   }
@@ -72,6 +78,10 @@ html{
     color: #ffffff;
   }
 
+  .text-content ol{
+    padding-left: 50px;
+  }
+
   .text-content .p_black{
     color: #1D1616;
   }
@@ -91,7 +101,8 @@ html{
     border-radius: 15px;
     padding: 2px 15px;
     font-size: 15px;   
-    display: inline-block;  
+    display: inline-block;
+    font-family: 'Bebas Neue', sans-serif;  
 
     margin-bottom: 10px;
   }
@@ -198,15 +209,27 @@ html{
   }
 
   .life:hover {
-    color: #394921;
+    color: #053401;
   }
 
   .love:hover {
-    color: #3e3b8b;
+    color: #1f0134;
   }
 
   .lawbreaking:hover {
-    color: #ff1313;
+    color: #340101;
+  }
+
+  .life.hovered {
+    color: #053401;
+  }
+
+  .love.hovered {
+    color: #1f0134;
+  }
+
+  .lawbreaking.hovered {
+    color: #340101;
   }
 
   /* overview-section */
@@ -255,9 +278,10 @@ html{
 
   .question-number{
     color:#ff4b4b;
-    font-size: 60px;
+    font-size: 70px;
     font-weight: bold;
     font-style: italic;
+    font-family: 'Bebas Neue', sans-serif;
   }
 
   .hypothesis-container{
@@ -629,7 +653,7 @@ html{
   }
   
   .team-member {
-    height: 500px;
+    height: 600px;
     width: 300px;
     background-color: white;
     border-radius: 12px;
@@ -646,8 +670,8 @@ html{
   }
 
   .team-member img{
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
     border-radius: 50%;
   }

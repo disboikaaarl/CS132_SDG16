@@ -97,7 +97,6 @@ window.addEventListener('scroll', () => {
   }
 });
 
-
 // Tab functionality
 document.getElementById("defaultOpen").click();
 
@@ -114,3 +113,24 @@ function openCity(evt, cityName) {
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
 }
+
+window.addEventListener('load', () => {
+  const life = document.querySelector('.life');
+  const love = document.querySelector('.love');
+  const lawbreaking = document.querySelector('.lawbreaking');
+
+  setTimeout(() => {
+    life.classList.add('hovered');
+    setTimeout(() => {
+      life.classList.remove('hovered');
+      love.classList.add('hovered');
+      setTimeout(() => {
+        love.classList.remove('hovered');
+        lawbreaking.classList.add('hovered');
+        setTimeout(() => {
+          lawbreaking.classList.remove('hovered');
+        }, 1000);
+      }, 1000);
+    }, 1000);
+  }, 500);
+});
