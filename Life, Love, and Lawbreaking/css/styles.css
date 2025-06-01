@@ -78,10 +78,6 @@ html{
     color: #ffffff;
   }
 
-  .text-content ol{
-    padding-left: 50px;
-  }
-
   .text-content .p_black{
     color: #1D1616;
   }
@@ -308,7 +304,7 @@ html{
   }
 
   /* data-section */
-  .data-section{
+  .data-section, .methods-section{
     min-height: 100vh;
 
     display: flex;
@@ -425,8 +421,8 @@ html{
   .button-container{
     display: flex;
     flex-direction: column;
-    gap: 10px;
 
+    gap: 15px;
     margin-top: 50px;
   }
 
@@ -442,6 +438,14 @@ html{
 
     font-size: 30px;
     margin: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .collapsible-container{
+    text-align: center;
   }
 
   .collapsible-content{
@@ -452,12 +456,23 @@ html{
     display: flex;
     flex-direction: column;
     gap: 25px;
-    padding-top: 5px;
   }
 
-  .active, .collapsible:hover {
+  .active, .collapsible:hover{
     background-color: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .collapsible.active img{
+    transform: rotate(180deg);
+  }
+
+  .collapsible img{
+    transition: transform 0.3s;
+  }
+
+  .collapsible button:active{
+    transform: rotate(180deg);
   }
 
   .col-con-container{
@@ -468,7 +483,7 @@ html{
     padding: 2rem;
     border-radius: 1.5rem;
 
-    margin: 0 15px;
+    margin: 15px 15px 0; 
 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     background-color: #862c2c;
@@ -478,27 +493,6 @@ html{
   .data-understanding, .data-preparation{
     font-family: 'Nunito', sans-serif;
     font-size: 19px;
-  }
-  
-  .data-understanding li{
-    padding-left: 20px;
-  }
-
-  .data-understanding ol{
-   margin: 10px 0 100px 35px;
-  }
-
-  .data-understanding ul, .dataa-preparation ul{
-    padding-left: 40px;
-    margin: 5px 0;
-  }
-
-  .data-preparation ol{
-    margin: 10px 0 5px 35px;
-  }
-
-  .data-preparation li{
-    margin: 10px 0;
   }
 
   .tab-container{
@@ -607,12 +601,6 @@ html{
     transform: scale(1.5);
   }
 
-  /* methods-section */
-  .methods-section{
-    min-height: 100vh;
-    padding: 100px 250px;
-  }
-
   /* results-section */
   .results-section{
     min-height: 100vh;
@@ -625,7 +613,7 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 60px 20px;
+    padding: 100px 20px;
   }
   
   .team-content {
@@ -638,6 +626,7 @@ html{
     color: white;
     font-weight: 700;
     margin-bottom: 10px;
+    padding-top: 20px;
   }
   
   .team-caption p {
@@ -674,6 +663,7 @@ html{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
+    object-position: top;
   }
 
   .member-picture{
