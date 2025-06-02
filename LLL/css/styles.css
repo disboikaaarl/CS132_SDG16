@@ -132,7 +132,8 @@ html{
   .home-section, .overview-section, .data-section, .methods-section, .results-section, .team-section{
       /*radial-gradient(ellipse, #8E1616 40%, transparent 70%),
       radial-gradient(ellipse at bottom, #D84040); */
-      background-image: url(/bg-image.svg);
+      /*background-image: url(/bg-image.svg);*/
+      background-color: #340101;
   }
 
   /* Navigation Bar */
@@ -214,7 +215,7 @@ html{
   }
 
   .lawbreaking:hover {
-    color: #340101;
+    color: #210101;
   }
 
   .life.hovered {
@@ -226,7 +227,7 @@ html{
   }
 
   .lawbreaking.hovered {
-    color: #340101;
+    color: #210101;
   }
 
   /* overview-section */
