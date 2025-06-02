@@ -132,7 +132,7 @@ html{
   .home-section, .overview-section, .data-section, .methods-section, .results-section, .team-section{
       /*radial-gradient(ellipse, #8E1616 40%, transparent 70%),
       radial-gradient(ellipse at bottom, #D84040); */
-      background-image: url(/LLL/elements/images/gggrain.svg);
+      background-image: url(../LLL/elements/images/gggrain.svg);
   }
 
   /* Navigation Bar */
