@@ -21,7 +21,7 @@
                     <li><a href="#overview" data-scroll>Overview</a></li>
                     <li><a href="#collection" data-scroll>Collection</a></li>
                     <li><a href="#exploration" data-scroll>Exploration</a></li>
-                    <li><a href="#results" data-scroll>Results</a></li>
+                    <li><a href="#results" data-scroll>Results & Conclusion</a></li>
                     <li><a href="#team" data-scroll>Team</a></li>
                 </ul>
             </nav>
@@ -263,92 +263,90 @@
                             <p>Good research begins with understanding the data. Let us provide a closer look at the datasets that shape our findings.</p>
                         </div>
                         <div class="button-container">
+                            <!--BUTTON 1-->
                             <div class="collapsible-container">
                                 <button class="collapsible">Crime Rate Dataset
-                                    <img width="20" height="20" src="https://img.icons8.com/metro/26/FFFFFF/expand-arrow.png" alt="expand-arrow"/>
+                                    <img width="15" height="15" src="https://img.icons8.com/metro/26/FFFFFF/expand-arrow.png" alt="expand-arrow"/>
                                 </button>                              
                                 <div class="collapsible-content">
-                                    <div class="col-con-container" style>
-                                        <div class="text-content">
-                                            <div>
-                                                <p>The Crime dataset contains 378 rows and 66 columns.</p>
-                                            </div>
-                                            <div>
-                                                <p>Each row is uniquely identified by:</p>
-                                            </div>
-                                            <div>
-                                               <ul>Source Name
+                                    <div class="collapsible-card">
+                                        <div class="grouped_p">
+                                            <p>The Crime dataset contains 378 rows and 66 columns.</p>
+                                        </div>
+                                        <p>Each row is uniquely identified by:</p>
+                                        <div class="list-container">
+                                            <ul>
+                                                <li>Source Name
                                                     <ul>
                                                         <li>The filename of the PDF from which the data was extracted.</li>
-                                                        <li>Type of Data: Qualitative, Discrete, Nominal Level</li>
-                                                        <li>Note: This column also denotes the month and year the crime data represents, which is ordinal in nature.</li>
-                                                    </ul>  
-                                                </ul>       
-                                                <ul>OFFICE
+                                                        <li>Note:
+                                                            <ul>
+                                                                <li>This column also denotes the month and year the crime data represents, which is ordinal in nature.</li>
+                                                            </ul>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>OFFICE
                                                     <ul>
                                                         <li>The name of the PNP regional office that reported the data.</li>
-                                                        <li>Type of Data: Qualitative, Discrete, Nominal Level</li>
+                                                        <li>Type of Data: Qualitative, Nominal Level</li>
                                                     </ul>
-                                                <ul>
-                                            </div>
-                                            <div>
-                                                <p>The remaining columns are aggregated from three tables present in each PDF:</p>
-                                            </div>
-                                            <div>
-                                                <ol>
-                                                    <li>Index and non-index crimes</li>
-                                                    <li>Public safety-related crimes</li>
-                                                    <li>A summary table</li>
-                                                </ol>
-                                            </div>
-                                            <div>
-                                                <p>These columns include:</p>
-                                            </div>
-                                            <div>
-                                                <ul>Crime Types
-                                                    <ul>
-                                                        <li>Type of Data: Qualitative, Discrete, Ratio Level</li>
-                                                    </ul>
-                                                </ul>
-                                                <ul>Derived Totals
-                                                    <ul>
-                                                         <li>Type of Data: Qualitative, Discrete, Ratio Level</li>
-                                                    </ul>
-                                                </ul>
-                                                <ul>Derived Rates
-                                                    <ul>
-                                                        <li>Type of Data: Qualitative, Continuous, Ratio Level</li>
-                                                    </ul>
-                                                </ul>
-                                            </div>
-                                            <div>
-                                                <p>Further technical details are available in the <a href="https://psa.gov.ph/sites/default/files/ncs/paper-presentations-manuscripts/Crime%20Information%2C%20Reporting%20and%20Analysis%20System%20%28CIRAS%29.pdf" target="_blank">Crime Information, Reporting and Analysis System (CIRAS)</a> documentation and the 2013 <a href="https://web.senate.gov.ph/publications/AAG%202013-05%20-%20Crime%20Statistics.pdf" target="_blank">crime statistics report</a> published by the Senate Economic Planning Office (SEPO).</p>
-                                            </div>
-                                            <div>
-                                                <p>This dataset provides a comprehensive snapshot of reported crimes across Philippine regions, capturing both crime types and derived performance indicators of law enforcement.</p>
-                                            </div>
+                                                </li>
+                                            </ul>
                                         </div>
-                                    </div>  
-                                    <div></div>
+                                        <div>
+                                            <p>The remaining columns are aggregated from three tables present in each PDF:</p>
+                                        </div>
+                                        <div class="list-container">
+                                            <ol>
+                                                <li>Index and non-index crimes</li>
+                                                <li>Public safety-related crimes</li>
+                                                <li>A summary table</li>
+                                            </ol>
+                                        </div>
+                                        <div>
+                                            <p>These columns include:</p>
+                                        </div>
+                                        <div class="list-container">
+                                            <ul>
+                                                <li>Crime Types
+                                                    <ul>
+                                                        <li>Type of Data: Qualitative, Ratio Level</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Derived Tools
+                                                    <ul>
+                                                        <li>Type of Data: Quantitative, Discrete, Ratio Level</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Derived Rates
+                                                    <ul>
+                                                        <li>Type of Data: Quantitative, Continuous, Ratio Level</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="grouped_p">
+                                            <p>Further technical details are available in the linked <a href="" target="_blank">page</a>.</p>
+                                            <p>This dataset provides a comprehensive snapshot of reported crimes across Philippine regions, capturing both crime types and derived performance indicators of law enforcement.</p> 
+                                        </div>
+                                    </div>                                       
                                 </div>
                             </div>
+                            <!--BUTTON 2-->
                             <div class="collapsible-container">
                                 <button class="collapsible">Birth and Marriage Dataset
-                                    <img width="20" height="20" src="https://img.icons8.com/metro/26/FFFFFF/expand-arrow.png" alt="expand-arrow"/>
+                                    <img width="15" height="15" src="https://img.icons8.com/metro/26/FFFFFF/expand-arrow.png" alt="expand-arrow"/>
                                 </button>
                                 <div class="collapsible-content">
-                                    <div class="col-con-container" style>
-                                        <div class="text-content">
-                                            <div>
-                                                <p>The Birth dataset consists of 405 rows and 16 columns, while the Marriage dataset includes 402 rows and 16 columns. </p>
-                                            </div>
-                                            <div>
-                                                <p>Since both datasets come from the same source, they share a nearly identical structure, allowing them to be seamlessly merged for preprocessing.</p>
-                                            </div>
-                                            <div>
-                                                <p>Each row is uniquely identified by:</p>
-                                            </div>
-                                            <div>
+                                    <div class="collapsible-card">
+                                        <div class="grouped_p">
+                                            <p>The Birth dataset consists of 405 rows and 16 columns, while the Marriage dataset includes 402 rows and 16 columns. </p>
+                                            <p>Since both datasets come from the same source, they share a nearly identical structure, allowing them to be seamlessly merged for preprocessing.</p>
+                                        </div>
+                                        <p>Each row is uniquely identified by:</p>
+                                        <div class="list-container">
+                                            <ul>
                                                 <li>Location Column
                                                     <ul>
                                                         <li>In the Birth dataset: PLACE OF USUAL RESIDENCE</li>
@@ -369,11 +367,13 @@
                                                         <li>Type of Data: Quantitative, Discrete, Ordinal level</li>
                                                     </ul>
                                                 </li>
-                                            </div>
-                                            <div>
-                                                <p>The remaining columns cover event counts:</p>
-                                            </div>
-                                            <div>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <p>The remaining columns cover event counts:</p>
+                                        </div>
+                                        <div class="list-container">
+                                            <ul>
                                                 <li>Total
                                                     <ul>
                                                         <li>The overall total of registered events.</li>
@@ -386,29 +386,27 @@
                                                         <li>Type of Data: Quantitative, Discrete, Ratio Levels</li>
                                                     </ul>
                                                 </li>
-                                            </div>
-                                            <div>
-                                                <p>These datasets offer a structured view of vital events across regions and time, helping trace patterns in how Filipinos form families over recent years.</p>
-                                            </div>
+                                            </ul>
                                         </div>
-                                    </div>  
-                                    <div></div>
+                                        <div>
+                                            <p>These datasets offer a structured view of vital events across regions and time, helping trace patterns in how Filipinos form families over recent years.</p>
+                                        </div>   
+                                    </div>
                                 </div>
-                            </div>
+                            </div>  
+                            <!--BUTTON 3-->
                             <div class="collapsible-container">
                                 <button class="collapsible">Urbanization Dataset
-                                    <img width="20" height="20" src="https://img.icons8.com/metro/26/FFFFFF/expand-arrow.png" alt="expand-arrow"/>
+                                    <img width="15" height="15" src="https://img.icons8.com/metro/26/FFFFFF/expand-arrow.png" alt="expand-arrow"/>
                                 </button>
                                 <div class="collapsible-content">
-                                    <div class="col-con-container" style>
-                                        <div class="text-content">
-                                            <div>
-                                                <p>The Urbanization dataset has 135 rows and 8 columns.</p>
-                                            </div>
-                                            <div>
-                                                <p>Each row is uniquely identified by:</p>
-                                            </div>
-                                            <div>
+                                    <div class="collapsible-card">
+                                        <div class="grouped_p">
+                                            <p>The Urbanization dataset has 135 rows and 8 columns.</p>
+                                        </div>
+                                            <p>Each row is uniquely identified by:</p>
+                                        <div class="list-container">
+                                            <ul>
                                                 <li>REGION, PROVINCE, AND HIGHLY URBANIZED CITY
                                                     <ul>
                                                         <li>The geographic unit associated with the statistics.</li>
@@ -421,11 +419,13 @@
                                                         <li>Type of Data: Qualitative, Discrete, Nominal level</li>
                                                     </ul>
                                                 </li>
-                                            </div>
-                                            <div>
-                                                <p>The remaining columns describe population and urbanization measures:</p>
-                                            </div>
-                                            <div>
+                                            </ul>     
+                                        </div>
+                                        <div>
+                                            <p>The remaining columns describe population and urbanization measures:</p>
+                                        </div>
+                                        <div class="list-container">
+                                            <ul>
                                                 <li>Total Population Columns
                                                     <ul>
                                                         <li>The total number of individuals living in the geographic area.</li>
@@ -444,71 +444,77 @@
                                                         <li>Type of Data: Quantitative, Continuous, Ratio Level</li>
                                                     </ul>   
                                                 </li>
-                                            </div>
-                                            <div>
-                                                <p>This dataset provides a static but essential snapshot of the distribution between urban and rural living spaces across the Philippines and remains the most recent and complete urbanization reference as of the time of this study.</p>
-                                            </div>
-                                            <div>
-                                                <p>We compiled the key details of each dataset into the below summary:</p>
-                                            </div>
-                                            <div style="display: flex; justify-content: center; align-items: center;";>
-                                                <style type="text/css">
-                                                    .tg  {border-collapse:collapse;border-spacing:0;}
-                                                    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                                                      overflow:hidden;padding:10px 5px;word-break:normal;}
-                                                    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-                                                      font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                                                    .tg .tg-il3a{border-color:#ffffff;color:#ffffff;text-align:left;vertical-align:top}
-                                                    </style>
-                                                    <table class="tg"><thead>
-                                                      <tr>
-                                                        <th class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Dataset</span></th>
-                                                        <th class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Size</span></th>
-                                                        <th class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Time Covered</span></th>
-                                                        <th class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Identifiers</span></th>
-                                                        <th class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Source</span></th>
-                                                      </tr></thead>
-                                                    <tbody>
-                                                      <tr>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Crime</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">378 × 66</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">1/2022 - 9/2023</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Source Name, OFFICE</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">PNP PDFs</span></td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Birth</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">405 × 16</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">1/2022 - 10/2024 (provisional)</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Place, Year</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">PSA Excel Files</span></td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Marriage</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">402 × 16</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">1/2022 - 10/2024 (provisional)</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Place, Year</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">PSA Excel Files</span></td>
-                                                      </tr>
-                                                      <tr>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Urbanization</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">135 × 8</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">2020 (static)</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Place</span></td>
-                                                        <td class="tg-il3a"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">PSA Excel Files</span></td>
-                                                      </tr>
-                                                    </tbody></table>
-                                            </div>
-                                            <div>
-                                                <p>Now that we are more familiar with our data, we can now take a closer look at its nuances.</p>
-                                            </div>
+                                            </ul>
                                         </div>
-                                    </div>  
-                                    <div></div>
+                                        <div class="grouped_p">
+                                            <p>This dataset provides a static but essential snapshot of the distribution between urban and rural living spaces across the Philippines and remains the most recent and complete urbanization reference as of the time of this study.</p>
+                                            <p>We compiled the key details of each dataset into the below summary:</p>
+                                        </div>
+                                        <div>
+                                            <style type="text/css">
+                                            .tg  {border-collapse:collapse;border-spacing:0;}
+                                            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                            overflow:hidden;padding:10px 5px;word-break:normal;}
+                                            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                            font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                            .tg .tg-15sy{background-color:#efefef;border-color:#000000;color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                            .tg .tg-dlfj{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                            .tg .tg-ydi3{background-color:#ffffff;border-color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                            .tg .tg-545c{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:center;
+                                            vertical-align:top}
+                                            .tg .tg-cdxa{background-color:#efefef;border-color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                            .tg .tg-5mc1{background-color:#efefef;border-color:#000000;color:#000000;font-size:16px;font-weight:bold;text-align:left;
+                                            vertical-align:top}
+                                            .tg .tg-i1ym{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;font-weight:bold;text-align:left;
+                                            vertical-align:top}
+                                            </style>
+                                            <table class="tg"><thead>
+                                            <tr>
+                                                <th class="tg-545c">Dataset</th>
+                                                <th class="tg-545c"><span style="font-style:normal;text-decoration:none">Size</span></th>
+                                                <th class="tg-545c"><span style="font-style:normal;text-decoration:none">Time Covered</span></th>
+                                                <th class="tg-545c"><span style="font-style:normal;text-decoration:none">Identifiers</span></th>
+                                                <th class="tg-545c"><span style="font-style:normal;text-decoration:none">Source</span></th>
+                                            </tr></thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="tg-i1ym"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Crime</span></td>
+                                                <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">378 × 66</span></td>
+                                                <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">1/2022 - 9/2023</span></td>
+                                                <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Source Name, OFFICE</span></td>
+                                                <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">PNP PDFs</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tg-5mc1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Birth</span></td>
+                                                <td class="tg-15sy"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">405 × 16</span></td>
+                                                <td class="tg-15sy"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">1/2022 - 10/2024 (provisional)</span></td>
+                                                <td class="tg-cdxa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Place, Year</span></td>
+                                                <td class="tg-cdxa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">PSA Excel Files</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Marriage</span></td>
+                                                <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">402 × 16</span></td>
+                                                <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">1/2022 - 10/2024 (provisional)</span></td>
+                                                <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Place, Year</span></td>
+                                                <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">PSA Excel Files</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="tg-cdxa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Urbanization</span></td>
+                                                <td class="tg-cdxa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">135 × 8</span></td>
+                                                <td class="tg-cdxa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">2020 (static)</span></td>
+                                                <td class="tg-cdxa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Place</span></td>
+                                                <td class="tg-cdxa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">PSA Excel Files</span></td>
+                                            </tr>
+                                            </tbody></table>
+                                        </div>
+                                        <div>
+                                            <p>Now that we are more familiar with our data, we can now take a closer look at its nuances.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                     </div>
+                </div>
                     <!--DATA PREPARATION-->
                     <div class="data-preparation">
                         <div>
@@ -569,101 +575,124 @@
                                 <button class="tablinks" onclick="openCity(event, 'Birth and Marriage')">Birth and Marriage</button>
                                 <button class="tablinks" onclick="openCity(event, 'Urbanization')">Urbanization</button>
                             </div>
-                            
+                        
                             <!-- Tab content -->
                             <div id="Crime" class="tabcontent">
-                                <div class="text-content">
-                                    <div>
-                                        <ol>
-                                            <li>Format Refinement
-                                                <ul>a. Renamed columns for consistent casing and clarity</ul>
-                                                <ul>b. Renamed the Source Name column to Year-Month</ul>
-                                                <ul>c. Renamed rows in the Year-Month column to reflect actual time periods</ul>
-                                                <ul>d. Renamed the Office column to Place</ul>
-                                                <ul>e. Renamed rows in the Place column to reflect actual Philippine regions</ul>
-                                            </li>
-                                            <li>Removal of Irrelevant Columns
-                                                <ul>a. Dropped all columns pertaining to derived totals and rates, except for the Average Monthly Crime Rate column</ul>
-                                            </li>
-                                            <li>Removal of Irrelevant Rows
-                                                <ul>a. Dropped rows where the Region column has the value TOTAL</ul>
-                                            </li>
-                                            <li>Handling of Outliers
-                                                <ul>a. Retained all outliers to preserve possible contextual significance</ul>
-                                            </li>
-                                            <li>Final Adjustments
-                                                <ul>a. Converted incorrectly flagged categorical columns into numerical type</ul>
-                                                <ul>b. Ordered rows by Year-Month</ul>
-                                            </li>
-                                        </ol>
-                                    </div>
+                                <div>
+                                    <ol type="1">
+                                        <li>Format Refinement
+                                            <ol type="a">
+                                                <li>Renamed columns for consistent casing and clarity</li>
+                                                <li>Renamed the Source Name column to Year-Month</li>
+                                                <li>Renamed rows in the Year-Month column to reflect actual time periods</li>
+                                                <li>Renamed the Office column to Place</li>
+                                                <li>Renamed rows in the Place column to reflect actual Philippine regions</li>
+                                            </ol>
+                                        </li>
+                                        <li>Removal of Irrelevant Columns
+                                            <ol type="a">
+                                                <li>Dropped all columns pertaining to derived totals and rates, except for the Average Monthly Crime Rate column</li>
+                                            </ol>
+                                        </li>
+                                        <li>Removal of Irrelevant Rows
+                                            <ol type="a">
+                                                <li>Dropped rows where the Region column has the value TOTAL</li>
+                                            </ol>
+                                        </li>
+                                        <li>Handling of Outliers
+                                            <ol type="a">
+                                                <li>Retained all outliers to preserve possible contextual significance</li>
+                                            </ol>
+                                        </li>
+                                        <li>Final Adjustments
+                                            <ol type="a">
+                                                <li>Converted incorrectly flagged categorical columns into numerical type</li>
+                                                <li>Ordered rows by Year-Month</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
                                 </div>
                             </div>
-                            
                             <div id="Birth and Marriage" class="tabcontent">
-                                <div class="text-content">
-                                    <div>
-                                        <ol>
-                                            <li>Format Refinement
-                                                <ul>a. Standardized the location column</ul>
-                                                <ul>b. Reformatted the data to have a single Month column instead of twelve separate columns</ul>
-                                                <ul>c. Merged!</ul>
-                                                <ul>d. Converted incorrectly flagged categorical columns into numerical type</ul>
-                                                <ul>e. Combined Year and Month columns into a single Year-Month column</ul>
-                                            </li>
-                                            <li>Removal of Irrelevant Columns
-                                                <ul>a. Dropped rows where the location column has the value TOTAL</ul>
-                                                <ul>b. Dropped rows where the Type of Place column is not equal to Region
-                                                    <li>Dropped the Type of Place column</li>
-                                                </ul>
-                                            </li>
-                                            <li>Removal of Irrelevant Rows
-                                                <ul>a. Dropped rows from October 2024 onward</ul>
-                                                <ul>b. Filled the missing September 2024 value for BARMM in the Number of Registered Marriages column using the rounded mean of its September 2022 and 2023 values</ul>
-                                            </li>
-                                            <li>Handling of Outliers
-                                                <ul>a. Retained all outliers to preserve possible contextual significance</ul>
-                                            </li>
-                                            <li>Final Adjustments
-                                                <ul>a. Replaced all instances of MIMAROPA REGION in the location column with REGION IV-B (MIMAROPA)</ul>
-                                            </li>
-                                        </ol>
-                                    </div>
+                                <div>
+                                    <ol type="1">
+                                        <li>Format Refinement
+                                            <ol type="a">
+                                                <li>Standardized the location column</li>
+                                                <li>Reformatted the data to have a single Month column instead of twelve separate columns</li>
+                                                <li>Merged!</li>
+                                                <li> Converted incorrectly flagged categorical columns into numerical type</li>
+                                                <li>Combined Year and Month columns into a single Year-Month column</li>
+                                            </ol>
+                                        </li>
+                                        <li>Removal of Irrelevant Columns
+                                            <ol typ="a">
+                                                <li>Dropped rows where the location column has the value TOTAL</li>
+                                                <li>Dropped rows where the Type of Place column is not equal to Region
+                                                    <ul>
+                                                        <li>Dropped the Type of Place column</li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>Removal of Irrelevant Rows
+                                            <ol type="a">
+                                                <li>Dropped rows from October 2024 onwards</li>
+                                                <li>Filled the missing September 2024 value for BARMM in the Number of Registered Marriages column using the rounded mean of its September 2022 and 2023 values</li>
+                                            </ol>
+                                        </li>
+                                        <li>Handling of Outliers
+                                            <ol type="a">
+                                                <li>Retained all outliers to preserve possible contextual significance</li>
+                                            </ol>
+                                        </li>
+                                        <li>Final Adjustments
+                                            <ol type="a">
+                                                <li>Replaced all instances of MIMAROPA REGION in the location column with REGION IV-B (MIMAROPA)</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
                                 </div>
                             </div>
                             <div id="Urbanization" class="tabcontent">
-                                <div class="text-content">
-                                    <div>
-                                        <ol>
-                                            <li>Format Refinement
-                                                <ul>a. Removed every column except identifiers and the Percent Urban - 2020 column</ul>
-                                            </li>
-                                            <li>Removal of Irrelevant Columns
-                                                <ul>a. Dropped rows where the Type of Place column is not equal to Region
-                                                    <li>Dropped the Type of Place column</li>
-                                                </ul>
-                                            </li>
-                                            <li>Final Adjustments
-                                                <ul>a. Renamed the Percent Urban - 2020 column to Percent Urban</ul>
-                                                <ul>b. Renamed the REGION, PROVINCE, AND HIGHLY URBANIZED CITY column to Place</ul>
-                                                <ul>c. Replaced all instances of MIMAROPA REGION in the location column with REGION IV-B (MIMAROPA)</ul>
-                                                <ul>d. Replaced all instances of REGION XIII (CARAGA) in the location column with REGION XIII (Caraga)</ul>
-                                            </li>
-                                        </ol>
-                                    </div>
+                                <div>
+                                    <ol>
+                                        <li>Removal of Irrelevant Columns
+                                            <ol>
+                                                <li>Removed every column except identifiers and the Percent Urban - 2020 column</li>
+                                            </ol>
+                                        </li>
+                                        <li>Removal of Irrelevant Rows
+                                            <ol>
+                                                <li>Dropped rows where the Type of Place column is not equal to Region
+                                                    <ul>
+                                                        <li>Dropped the Type of Place column</li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                        <li>Final Adjustments
+                                            <ol>
+                                                <li>Renamed the Percent Urban - 2020 column to Percent Urban</li>
+                                                <li>Renamed the REGION, PROVINCE, AND HIGHLY URBANIZED CITY column to Place</li>
+                                                <li>Replaced all instances of MIMAROPA REGION in the location column with REGION IV-B (MIMAROPA)</li>
+                                                <li>Replaced all instances of REGION XIII (CARAGA) in the location column with REGION XIII (Caraga)</li>
+                                            </ol>
+                                        </li>
+                                    </ol>
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div class="card-2">
                             <div class="text-content" style="text-align: center;">
                                 <p>View how each dataset was preprocessed in detail:</p>
                             </div>
                             <div class="dataset-links-container">
                                 <div>
-                                    <a class="dataset-button" href="https://colab.research.google.com/drive/12wGg2foxkWGmXR52syXzVq0HDJylhCtS?usp=sharing" target="_blank">Crime</a>
+                                    <a class="dataset-button" href="https://colab.research.google.com/drive/12wGg2foxkWGmXR52syXzVq0HDJylhCtS?usp=sharing" target="_blank">Crime</a>  
                                 </div>
                                 <div>
-                                    <a class="dataset-button" href="https://colab.research.google.com/drive/181gn1CTh4Hpsyj1N0fLFhq9ykRrUQqTk?usp=sharing" target="_blank">Birth and Marriage</a>
+                                    <a class="dataset-button" href="https://colab.research.google.com/drive/181gn1CTh4Hpsyj1N0fLFhq9ykRrUQqTk?usp=sharing" target="_blank">Birth and Marriage</a>                                   
                                 </div>
                                 <div>
                                     <a class="dataset-button" href="https://colab.research.google.com/drive/1uG7JmYpepFPA3Diu2iPhwoP8oRE-1jMn?usp=sharing" target="_blank">Urbanization</a>
@@ -676,18 +705,18 @@
                             </div>
                         </div>
                     </div>
-
                     <!--FEATURE UNDERSTANDING-->
                     <div class="feature-understanding">
                         <h2>Feature Understanding</h2>
                         <div class="text-content">
                                 <p>What do our features say? We zoom in on each one, interpret its quirks, and identify what insights they unlock.</p>
                         </div>
+                        <!--UNIVARIATE ANALYSIS-->
                         <div class="feature-card">
                             <div>
                                 <h1>UNIVARIATE ANALYSIS</h1>
                                 <h2>Distribution</h2>
-                                <p>First, we check the distribution of the datasets.</p>
+                                <p>To begin, we checked the distribution of each dataset.</p>
                                 <div class="plots-container">
                                     <div class="plots-items">
                                         <img src="elements/plots/univariate1.png">
@@ -699,13 +728,15 @@
                                         <img src="elements/plots/univariate3.png">
                                     </div>
                                 </div>
-                                <p>As we can see, the births, marriages, and crime datasets’ distributions are right-skewed.</p>
-                                <p>For the births, most of the data are around 5000 births. For marriages, the most frequent marriage count is around 1000 to 2000. The tail of the marriage distribution is the thinnest among the three distributions. Most of the crime rates are around 10-20. Unlike the other two histograms, its tail is not tapered, with its lowest value at around 50.</p>
-                                <p>The right-skewed data implies that in general, birth counts, marriage counts, and crime rates every month are on the relatively low side, save for the few rare, extreme instances on the tail. The tails of birth counts and marriage counts may be due to the fact that there are months where there are more births and marriages due to events such as wedding fairs. The tail of the crime rate distribution suggests that generally, monthly crime rates fall on the relatively lower range of 10-20, with certain months having higher values, which may be due to political or economic events.</p>
+                                <p>As can be seen, the distributions of the births, marriages, and crime datasets are right-skewed,  where most data points are clustered toward the lower end.</p>
+                                <p>Birth Count values are mostly concentrated around 5,000, with some rare peaks at the upper end.</p>
+                                <p>Marriage Count clusters around 1,000 to 2,000. Notably, its tail is the thinnest among all three distributions.</p>
+                                <p>Crime Rate commonly falls between 10 to 20%. Unlike the other distributions, however, its tail is not tapered, with outliers well above 50%.</p>
+                                <p>These patterns imply that, month-to-month, birth counts, marriage counts, and crime rates generally are relatively low, save for the few rare, extreme instances on their tails. The tails of birth and marriage counts may reflect seasonal or cultural events like wedding affairs. In contrast, sudden increases in the otherwise relatively low crime rates may relate to political tensions, economic events, or other social stressors.</p>
                             </div>
                             <div>
                                 <h2>Outliers</h2>
-                                <p>Next, we check for outliers to get a better view of our datasets.</p>
+                                <p>We then identify outliers to better understand any irregular patterns.</p>
                                 <!--INSERT BOX PLOTS-->
                                 <div class="plots-container">
                                     <div class="plots-items">
@@ -719,76 +750,153 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <p>We can see that, as to be expected from the right-skewed distribution, there are outliers toward the higher values’ side.</p>
-                                    <p>For now, we will not drop the outliers, as, based on the context of our problem, these may be valuable data points.</p>
+                                    <p>As expected from the skewed distributions, all three features show outliers on the higher end.</p>
+                                    <p>We will not drop these outliers as, given our research focus, these data points may be meaningful when evaluating correlations across regions and time.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="feature-card">
                             <div>
                                 <h1>TEMPORAL AND REGIONAL ANALYSIS</h1>
+                                <p>To understand how trends in birth, marriage, and crime vary across the country, we visualized monthly regional data using choropleth maps.</p>
+                                <p>These patterns help us grasp not only where things are happening, but how communities differ in the pressures they face</p>
+                            </div>
+                            <div>
                                 <h2>Crime Rate Choropleth Map</h2>
                                 <div class="plot-card">
                                     <iframe src="elements/plots/crime_tra.html" width="100%" height="900px" frameborder="0"></iframe>
                                 </div>
-                                <p>The map identifies four consistent crime hotspots: NCR, Central Visayas, and Davao. These regions remained prominent across all months.</p>
-                                <p>Notably, Central Visayas and Davao experienced spikes in crime rates in July and August 2022. September 2022 saw a nationwide surge in crime—a pattern not mirrored in September 2023. Meanwhile, Caraga showed a marked increase in crime in June 2023.</p>
+                                <p>The map identifies four consistent crime hotspots: NCR, Region 7 (Central Visayas), and Region 11 (Davao). These outlined areas regularly report higher crime rates month after month.</p>
+                                <p>Notably, Central Visayas and Davao experienced spikes in crime rates in July and August 2022. September 2022 saw a nationwide surge in crime — a pattern not mirrored in September 2023. Meanwhile, Caraga showed a marked increase in crime in June 2023.</p>
+                                <p>These fluctuations point to the uneven pressures felt by different regions, underscoring the need for localized context-setting.</p>
                             </div>
                             <div>
                                 <h2>Birth Choropleth Map</h2>
                                 <div class="plot-card">
                                     <iframe src="elements/plots/birth_tra.html" width="100%" height="900px" frameborder="0"></iframe>
                                 </div>
-                                <p>Region 4-A consistently records the highest birth count, with Region 3 and NCR following closely behind. The color distribution and intensity remains relatively stable over time, indicating minimal variation in birth trends across months.</p>    
+                                <p>Region 4-A (CALABARZON) consistently records the highest number of births, followed closely by Region 3 (Central Luzon) and NCR.</p>    
+                                <p>The map’s color distribution and intensity is relatively stable over time, indicating minimal variation in birth count trends across months.</p>
                             </div>
                             <div>
                                 <h2>Marriage Choropleth Map</h2>
                                 <div class="plot-card">
                                     <iframe src="elements/plots/marriage_tra.html" width="100%" height="900px" frameborder="0"></iframe>
                                 </div>
-                                <p>Similar to the birth count, Region 4-A leads in marriage count, followed by Central Luzon. While the overall color distribution remains consistent across months, a noticeable increase in intensity occurs every April in Luzon, and May in Visayas.</p>
+                                <p>Similar to the birth count, Region 4-A leads in marriage count, followed by Central Luzon.</p>
+                                <p>While the general pattern stays steady, we observe seasonal peaks every April in Luzon, and May in Visayas.</p>
                             </div>
                             <div>
                                 <h2>Ubanization Choropleth Map</h2>
                                 <div class="plot-card">
                                     <iframe src="elements/plots/urbanization_tra.html" width="100%" height="900px" frameborder="0"></iframe>
                                 </div>
-                                <p>The graph shows that Central Luzon, Southern Luzon, and NCR are among the most urbanized regions, while much of the northern and central Philippines remains largely rural.</p>
-                                <p>Meanwhile, parts of lower-right Mindanao, such as Davao Region, also exhibit relatively high urbanization levels.</p>
+                                <p>The urbanization map paints a picture of a highly centralized development landscape.</p>
+                                <p>NCR, Central Luzon, and Southern Luzon stand out as the most urbanized regions in the country, hosting more developed infrastructure. Much of the northern and central part of the Philippines, however, remains predominantly rural.</p>
+                                <p>Interestingly, parts of lower-right Mindanao, such as the Davao region, also exhibit relatively high urbanization levels.</p>
+                                <p>Understanding these differences is crucial, since while urbanized regions may attract more activity, they often experience distinct pressures. While these patterns may coexist, further analysis is needed to understand how, or if, they’re related.</p>
                             </div>  
                         </div>
                         <div class="feature-card">
                             <div>
                                 <h1>BIVARIATE ANALYSIS</h1>
-                                <p>Now we check for any correlations between the birth counts, marriage counts, and crime rates.</p>
+                                <p>To better understand the relationships between our variables, we explored the pairwise correlations between birth counts, marriage counts, and crime rates.</p>
                                 <!--SNS PLOT-->
                                 <div class="plot-card">
                                     <img src="elements/plots/bivariate.png">
                                 </div>
-                                <p>Based on the plot above, we can observe that there is a correlation between births and crime rates, as well as between marriages and crime rates. As we want to see if crime rates are influenced by births and marriage counts, this is promising. However, we can also see that there appears to be a correlation between births and marriage counts, our independent variables, so we should test for multicollinearity.</p>
+                                <p>Based on the plot above, we observe clear positive correlations between crime rates and both birth and marriage counts. This is promising information, as we are particularly invested in how these two aspects of family life might relate to crime rates.</p>
+                                <p>However, a notable relationship also emerges between birth and marriage counts themselves. Since these two features are our independent variables, their correlation raises a red flag for multicollinearity, which could affect the reliability of a multiple regression model.</p>
                             </div>
                             <div>
                                 <h2>Multicollinearity</h2>
-                                <p>Let’s use a correlation matrix on the three datasets:</p>
+                                <p>To check for multicollinearity, we created a correlation matrix:</p>
                                 <!--corr matrix-->
                                 <div class="plot-card">
                                     <img src="elements/plots/bivariate_corr.png">
                                 </div>
-                                <p>We can see that births and crime rates, as well as marriages and crime rates, are positively correlated (0.78), but we can also see that births and marriages are positively correlated (0.8).</p>
-                                <p>This suggests multicollinearity in our datasets. Before we can do any multiple regression (since we would also like to check if both birth and marriage counts have a relationship with crime rates), we should check if this multicollinearity will seriously impact the model. We can do this by computing for the Variance Inflation Factor (VIF).</p>
-                                <p>As we can see, the VIFs of the predictor variables are less than 4, so the multicollinearity will not significantly affect our results from the model.</p>
+                                <p>As shown, all three variables are positively correlated:</p>
+                                <div class="list-container">
+                                    <ul>
+                                        <li>Birth Count and Crime Rate: 0.78</li>
+                                        <li>Marriage Count and Crime Rate: 0.78</li>
+                                        <li>Birth Count and Marriage Count: 0.80</li>
+                                    </ul>
+                                </div>
+                                <p>This suggests multicollinearity in our datasets that may skew the results of our multiple regression. To investigate further, we calculated the Variance Inflation Factor (VIF) for each predictor.</p>
+                                <!--VIF TABLE-->
+                                <div>
+                                    <style type="text/css">
+                                    .tg  {border-collapse:collapse;border-spacing:0;}
+                                    .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                    overflow:hidden;padding:10px 5px;word-break:normal;}
+                                    .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                    font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                    .tg .tg-1d5l{background-color:#efefef;border-color:#000000;color:#000000;font-size:16px;font-weight:bold;text-align:center;
+                                    vertical-align:middle}
+                                    .tg .tg-eea2{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;text-align:right;vertical-align:middle}
+                                    .tg .tg-vkgt{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:right;
+                                    vertical-align:top}
+                                    .tg .tg-h78j{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:right;
+                                    vertical-align:middle}
+                                    .tg .tg-o3ss{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:center;
+                                    vertical-align:top}
+                                    .tg .tg-akg0{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;font-weight:bold;text-align:center;
+                                    vertical-align:middle}
+                                    .tg .tg-oekz{background-color:#efefef;border-color:#000000;color:#000000;font-size:16px;text-align:right;vertical-align:middle}
+                                    </style>
+                                    <table class="tg"><thead>
+                                    <tr>
+                                        <th class="tg-vkgt"></th>
+                                        <th class="tg-h78j"><span style="font-weight:700">Feature</span></th>
+                                        <th class="tg-o3ss">VIF</th>
+                                    </tr></thead>
+                                    <tbody>
+                                    <tr>
+                                        <td class="tg-akg0"><span style="font-weight:700">0</span></td>
+                                        <td class="tg-eea2">const</td>
+                                        <td class="tg-eea2">3.744967</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-1d5l"><span style="font-weight:700">1</span></td>
+                                        <td class="tg-oekz">Number of Registered Births</td>
+                                        <td class="tg-oekz">2.516740</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tg-akg0"><span style="font-weight:700">2</span></td>
+                                        <td class="tg-eea2">Number of Registered Marriages</td>
+                                        <td class="tg-eea2">2.516740</td>
+                                    </tr>
+                                    </tbody>
+                                    </table>
+                                </div>
+                                <p>Encouragingly, both VIF values fall below 4, which indicates that while multicollinearity does exist, it is not severe enough to significantly distort the model’s estimates.</p>
+                                <p>With that, we move forward — cautiously but more confidently — to explore deeper statistical relationships.</p>
                             </div>
+                        </div>
+                        <div class="feature-card">
                             <div>
                                 <h2>Putting Eveything Together</h2>
-                                <p>Here’s a graph that can summarize the relationships between births, marriages, and crime rates:</p>
+                                <p>To help visualize how all these variables interact, we plotted birth and marriage counts, with crime rates represented by the darkness of each point:</p>
                                 <!--green graph-->
                                 <div class="plot-card">
                                     <img src="elements/plots/allthree_plot.png">
                                 </div>
-                                <p>The above scatter plot plots births and marriages, with the darkness values of the points corresponding to the crime rates. From this we can see that there is an area around 12500-15000 births and 2000-6000 marriages where the crime rates are relatively high. However, we can also see that there is one dark point (high crime rate) in the area of low birth and marriage counts, which could be in a region and/or time period of low birth & marriage counts and high crime rates.</p>
+                                <p>This plot helps tie our initial insights together. From this, we can see that higher crime rates tend to cluster around regions and time periods with moderately high birth and marriage counts, at around 12,500 to 15,000 and 2,000 to 6,000, respectively.</p>
+                                <p>Intriguingly, there’s also a standout point with low birth and marriage counts but a high crime rate, suggesting that elevated crime rate doesn’t always coincide with high birth and marriage activity; it can occur in different contexts.</p>
                             </div>
-                        </div>  
+                        </div> 
+                        <div class="card-2">
+                            <div class="text-content">
+                                <p>So, why does this matter?</p>
+                                <p>These early explorations set the stage.</p>
+                                <p>They suggest that patterns do exist, but they’re not one-size-fits-all.</p>
+                                <p>By digging deeper across regions, time, and reviewing crime types, we can move beyond general trends and ask more meaningful and targeted questions about how family dynamics and pressures intersect in the Philippines today.</p>
+                                <p>Let us now take a closer look, one research question at a time.</p>
+                            </div>
+                        </div> 
                     </div>
+                    <!--RESEARCH QUESTIONS-->
                     <div class="feature-card">
                         <div>
                             <div class="rq-header-button">
@@ -802,15 +910,15 @@
                                     </div>  
                                 </div>                  
                             </div>
-                            <p>We’ll visualize the data via two means:</p>
+                            <p>To explore this, we use two key visualizations:</p>
                             <div class="mean-container">
                                 <div class="mean-item">
                                     <h2>3D Scatter Plots per Month</h2>
-                                    <p class="p_black">To highlight patterns, clustering, and outliers within each month, allowing for month-to-month comparisons of the relationships among the variables.</p>
+                                    <p class="p_black">These highlight monthly patterns, clustering, and outliers of the given data, allowing us to observe how relationships among variables shift from one month to the next.</p>
                                 </div>
                                 <div class="mean-item">
                                     <h2>Line Graphs + Multi-axis Line Graph</h2>
-                                    <p class="p_black">To track the trends of each variable over time and examine potential correlations between crime rates, birth counts, and marriage counts on a broader temporal scale.    </p>
+                                    <p class="p_black">These offer a long-view perspective on potential correlations between features, helping us trace the broader temporal trends of crime rates, birth counts, and marriage counts.</p>
                                 </div>
                             </div>
                         </div>
@@ -820,50 +928,75 @@
                                 <img src="elements/plots/rq1_plot1.png">
                             </div>
                             <p class="label">Seen above: 21 3D Scatter Plots for each month from 2022-01 to 2023-09.</p>
-                            <p>The above graphs illustrate that:</p>
-                            <p>The time periods of 2022-01 (January 2022) to 2022-07 (July 2022), all except 2022-04 (April 2022) appear to cluster in a similar, roughly linear pattern. In contrast, the cluster for 2022-04 (April 2022) is more spread out and does not follow the same directional trend as the others.</p>
-                            <p>The time period of 2022-08 (August 2022) to 2023-02 (February 2023), all plots exhibit relatively normal clustering patterns, except for 2022-12 (December 2022), which shows numerous outliers that are noticeably more extreme and distant from the main cluster.</p>
-                            <p>The time period 2023-03 (March 2023) to 2023-09 (September 2023), the clusters for 2023-06 (June 2023) and 2023-07 (July 2023) appear more dispersed compared to those of the other months.</p>
-                            <p>Overall, most scatter plots display similar clustering patterns, with a few exceptions observed in the time periods 2022-04 (April 2022), 2022-12 (December 2022), 2023-06 (June 2023), and 2023-07 (July 2023).</p>
-                            <p>The observations and possible events corresponding to these time periods are summarized in the table below.</p>
-                            <div>                  
+                            <p>The plots show that:</p>
+                            <div class="list-container">
+                                <ul>
+                                    <li>Most months show a roughly linear clustering pattern, suggesting a possible correlation between crime rates, birth counts, and marriage counts.</li>
+                                    <li>There are four outlier months: April 2022, December 2022, June 2023, and July 2023, which show more spread out values and numerous outliers that are noticeably more extreme and distant from the main cluster. 
+                                        <ul>
+                                            <li>These draw attention to possible context-specific disruptions due to social or political events.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>The table below summarizes these outlier months and their potential significance:</p>
+                            <div>                     
                                 <style type="text/css">
                                 .tg  {border-collapse:collapse;border-spacing:0;}
                                 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
                                 overflow:hidden;padding:10px 5px;word-break:normal;}
                                 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
                                 font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                                .tg .tg-urxo{border-color:#ffffff;color:#ffffff;text-align:center;vertical-align:top}
+                                .tg .tg-ydi3{background-color:#ffffff;border-color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                .tg .tg-n1yo{background-color:#efefef;border-color:#000000;font-size:16px;text-align:center;vertical-align:top}
+                                .tg .tg-cdxa{background-color:#efefef;border-color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                .tg .tg-o3ss{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:center;
+                                vertical-align:top}
+                                .tg .tg-34p0{background-color:#ffffff;border-color:#000000;font-size:16px;font-weight:bold;text-align:center;vertical-align:top}
+                                .tg .tg-fepf{background-color:#ffffff;border-color:#000000;font-size:16px;text-align:center;vertical-align:top}
                                 </style>
                                 <table class="tg"><thead>
                                 <tr>
-                                    <th class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Month-Year</span></th>
-                                    <th class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Notable Events</span></th>
-                                    <th class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Potential Impact on Data</span></th>
+                                    <th class="tg-o3ss"><span style="font-style:normal;text-decoration:none">Month-Year</span></th>
+                                    <th class="tg-o3ss"><span style="font-style:normal;text-decoration:none">Notable Events</span></th>
+                                    <th class="tg-o3ss"><span style="font-style:normal;text-decoration:none">Potential Impact on Data</span></th>
                                 </tr></thead>
                                 <tbody>
                                 <tr>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">2022-04 (April 2022)</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Tropical Storm Agaton; COVID-19 Omicron BA.2.12 case; RA 11712 signed</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Disruption in civil services; potential delays in registrations; fluctuations in crime rates</span></td>
+                                    <td class="tg-34p0"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">April 2022</span></td>
+                                    <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Tropical Storm Agaton; COVID-19 Omicron BA.2.12 case;</span></td>
+                                    <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Plausible disruption in government and civil functions because of the tropical storm and COVID-19 Omicron BA.2.12, which could delay birth and/or marriage registrations</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">2022-12 (December 2022)</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Severe flooding; Implementation of child marriage ban; SIM card registration law</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Disruption due to natural disaster; decrease in child marriages; potential impact on crime statistics</span></td>
+                                    <td class="tg-n1yo"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">December 2022</span></td>
+                                    <td class="tg-cdxa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Severe flooding; Implementation of child marriage ban; </span></td>
+                                    <td class="tg-cdxa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Possible delays in civil registrations and crime reporting due to natural disaster; Decrease in reported underage marriages</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">2023-06 (June 2023)</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Pride PH Festival; Peak in birth registrations  </span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Increase in public gatherings; potential rise in marriages and births</span></td>
+                                    <td class="tg-fepf"><span style="font-weight:400;font-style:normal;color:#000">June 2023</span></td>
+                                    <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Pride PH Festival; Post-pandemic adjustments and eased pandemic restrictions</span></td>
+                                    <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Spike in petty crimes due to crowd density; Resumption of delayed civil registrations</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">2023-07 </span><br><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">(July 2023)</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">High number of marriages in Makati; ongoing post-pandemic adjustments</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Seasonal increase in marriages; societal behavior shifts affecting crime and registrations</span></td>
+                                    <td class="tg-n1yo"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">July 2023</span></td>
+                                    <td class="tg-cdxa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Mass wedding programs in Makati; State of the Nation Address (SONA)</span></td>
+                                    <td class="tg-cdxa"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Surge in marriage registrations due to government-led mass weddings; Increased security measures and public demonstrations may have influenced crime statistics</span></td>
                                 </tr>
                                 </tbody></table>
                             </div>
+                            <div>
+                                <p class="label">References: 
+                                    <a href="https://ahacentre.org/flash-update/flash-update-no-01-tropical-storm-megi-agaton-philippines-10-april-2022/" target="_blank">[7]</a>
+                                    <a href="https://www.abs-cbn.com/news/05/13/22/ph-detects-ba2121-in-metro-manila-puerto-princesa" target="_blank">[8]</a>
+                                    <a href="https://floodlist.com/asia/philippines-shear-line-floods-december-2022 " target="_blank">[9]</a>
+                                    <a href="https://pcw.gov.ph/pcw-welcomes-law-prohibiting-child-marriage/" target="_blank">[10]</a>
+                                    <a href="https://www.abs-cbn.com/life/07/02/23/pride-2023-celebrating-fighting-for-equality-beyond-june" target="_blank">[11]</a>
+                                    <a href="https://www.researchgate.net/publication/350911906_The_COVID-19_Pandemic_Effects_on_Civil_Registration_of_Births_and_Deaths_and_on_Availability_and_Utility_of_Vital_Events_Data" target="_blank">[12]</a>
+                                    <a href="https://www.makati.gov.ph/content/news/8981" target="_blank">[13]</a>
+                                    <a href="https://www.philstar.com/headlines/2023/07/24/2283031/live-marcos-state-nation-address-2023" target="_blank">[14]</a>
+                                </p>
+                            </div>
+                            <p>These scatter plots visually support the notion that, sans some outliers,<strong>crime rates, birth counts, and marriage counts generally move in patterned ways across months.</strong></p>
                         </div>
                         <div>
                             <h2>VISUALIZATION 2: Line Graphs + Multi-axis Line Graph</h2>
@@ -876,42 +1009,50 @@
                             <div class="plot-card">
                                 <img src="elements/plots/rq1_plot5.png">
                             </div>
-                            <p class="label">Seen above: 3 Line Graphs each for Crime Rates, Births, and Marriages</p>
-                            <p>The above graphs illustrate that:</p>
-                            <div class="plot-text">
-                                <p class="plot-class">Crime Rate</p>
-                                <p>Crime rate fluctuates over the period, with noticeable peaks around 2022-09 (September 2022) and 2023-06 (June 2023).</p>
-                            </div>
-                            <div class="plot-text">
-                                <p class="plot-class">Birth</p>
-                                <div class="grouped_p">
-                                    <p>Birth counts generally trend higher from 2022-08 (August 2022) to 2022-11 (November 2022). </p>
-                                    <p>There is a steep decrease in 2023-02 (February 2023), followed by a rise toward 2023-09 (September 2023).</p>
-                                    <p>There exist significant dips in birth counts that appear consistently between 01 (January) and 02 (February) for both 2022 and 2023.</p>
-                                    <p>There also appears to be seasonal clustering of high birth counts during 07 (July) to 09 (September) across both years.</p>
-                                </div>
-                            </div>
-                            <div class="plot-text">
-                                <p class="plot-class">Marriage</p>
-                                <div class="grouped_p">
-                                    <p>Marriage counts experience sharp month-to-month fluctuations, with notable spikes in 2022-02 (February 2022), 2022-12 (December 2022), and 2023-02 (February 2023).</p>
-                                    <p>There are dips in 2022-11 (November 2022) and 2023-08 (August 2023).</p>
-                                    <p>There is a large spike in 2022-12 (December 2022) that may reflect an increase in marriages due to holidays or cultural practices.</p>
-                                    <p>There exist spikes in February (02) that may be associated with Valentine's Day-related events and the cultural association of February with love.</p>
-                                </div>
+                            <p class="label">Seen above: Individual Line Graphs Tracking Crime Rates, Birth Counts, and Marriage Counts from January 2022 to September 2023</p>
+                            <p>It can be observed from the above graphs that:</p>
+                            <div class="list-container">
+                                <ul>
+                                    <li>Crime Rate
+                                        <ul>
+                                            <li>Crime rates show fluctuations over the course of the available time period, displaying noticeable peaks around September 2022 and June 2023.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Birth
+                                        <ul>
+                                            <li>Birth counts generally trend higher between August and November 2022.</li>
+                                            <li>There is a steep decrease in February 2023 followed by a steady rise through September 2023.</li>
+                                            <li>Significant dips appear in January to February for both years.</li>
+                                            <li>Spikes show between July and September across both years.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Marriage
+                                        <ul>
+                                            <li>Marriage counts experience sharp month-to-month fluctuations, with notable spikes seen in February 2022, December 2022, and February 2023.
+                                                <ul>
+                                                    <li>Peaks in February may be associated with Valentine’s Day-related events and the cultural association of February with love.</li>
+                                                    <li>The December spike could be linked to holiday-related events or traditions.</li>
+                                                </ul>
+                                            </li>
+                                            <li>Notable dips occur in November 2022 and August 2023.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="plot-card">
                                 <img src="elements/plots/rq1_plot2.png">
                             </div>
                             <p class="label">Seen above: Multi-axis line graph layering Crime Rate, Births, and Marriages</p>
                             <p>The above graph illustrates that:</p>
-                            <div class="grouped_p">
-                                <p>In 2022-09 (September 2022), two metrics peak — both the crime rate and birth counts are relatively high, while marriage counts begin to rise again.</p>
-                                <p>In 2023-06 (June 2023), there is a noticeable surge in both crime rate and marriages, without a corresponding increase in birth counts.</p>
-                                <p>During the extended period from 2022-05 to 2023-02 (May 2022 to February 2023), birth counts and crime rates generally follow similar trends, rising and falling in tandem.</p>
-                                <p>Between 2023-04 and 2023-08 (April 2023 to August 2023), marriage counts and crime rates appear to align closely, exhibiting parallel increases and decreases.</p>
+                            <div class="list-container">
+                                <ul>
+                                    <li>In September 2022, both crime rates and birth counts rose simultaneously, while marriage counts began to rise.</li>
+                                    <li>In June 2023, crime rates and marriage counts both surged, while birth counts remained flat.</li>
+                                    <li>Birth counts and crime rates tended to move in tandem for an extended period between May 2022 and February 2023, with rises and falls aligning.</li>
+                                    <li>Marriage counts and crime rates appear to exhibit parallel fluctuations from April to August 2023.</li>
+                                </ul>
                             </div>
-                            <p>The observations and possible events corresponding to these trends are summarized in the table below.</p>
+                            <p>The observations and possible events corresponding to these trends are summarized in the table below:</p>
                             <div>
                                 <style type="text/css">
                                 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -919,39 +1060,51 @@
                                 overflow:hidden;padding:10px 5px;word-break:normal;}
                                 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
                                 font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                                .tg .tg-urxo{border-color:#ffffff;color:#ffffff;text-align:center;vertical-align:top}
+                                .tg .tg-n1yo{background-color:#efefef;border-color:#000000;font-size:16px;text-align:center;vertical-align:top}
+                                .tg .tg-o3ss{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:center;
+                                vertical-align:top}
+                                .tg .tg-34p0{background-color:#ffffff;border-color:#000000;font-size:16px;font-weight:bold;text-align:center;vertical-align:top}
+                                .tg .tg-fepf{background-color:#ffffff;border-color:#000000;font-size:16px;text-align:center;vertical-align:top}
                                 </style>
                                 <table class="tg"><thead>
                                 <tr>
-                                    <th class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Month-Year</span></th>
-                                    <th class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Notable Events</span></th>
-                                    <th class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Potential Impact on Data</span></th>
+                                    <th class="tg-o3ss"><span style="font-style:normal;text-decoration:none">Month-Year</span></th>
+                                    <th class="tg-o3ss"><span style="font-style:normal;text-decoration:none">Notable Events</span></th>
+                                    <th class="tg-o3ss"><span style="font-style:normal;text-decoration:none">Potential Impact on Data</span></th>
                                 </tr></thead>
                                 <tbody>
                                 <tr>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">2022-09 (September 2022)</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Peaks in crime rate and births; marriages rising  |  Seasonal birth trends; cultural marriage preferences; socio-economic factors affecting crime rates</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Peaks in crime rate and births; marriages rising  |  Seasonal birth trends; cultural marriage preferences; socio-economic factors affecting crime rates</span></td>
+                                    <td class="tg-34p0"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">September 2022</span></td>
+                                    <td class="tg-fepf"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">School year opening under full in-person setup; loosening of pandemic restrictions</span></td>
+                                    <td class="tg-fepf"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Higher social mobility may have led to increased crimes; seasonal birth peaks; resumed civil operations affect data</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">2023-06 (June 2023)</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Surge in crime rate and marriages; stable births  | Pride PH Festival; traditional wedding month; gestation period affecting birth rates</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Surge in crime rate and marriages; stable births  | Pride PH Festival; traditional wedding month; gestation period affecting birth rates</span></td>
+                                    <td class="tg-n1yo"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">June 2023</span></td>
+                                    <td class="tg-n1yo"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Pride PH Festival; traditional wedding season; relaxed civil protocols post-pandemic</span></td>
+                                    <td class="tg-n1yo"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Large gatherings may have spiked petty crimes; June weddings influenced higher marriage registrations</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">2022-05 to 2023-02 </span><br><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">(May 2022 - February 2023)</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Parallel trends in births and crime rates  |  Post-pandemic societal adjustments; policy changes like child marriage ban</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Parallel trends in births and crime rates  |  Post-pandemic societal adjustments; policy changes like child marriage ban</span></td>
+                                    <td class="tg-fepf"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">May 2022 - February 2023</span></td>
+                                    <td class="tg-fepf"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">COVID-19 recovery phase; implementation of child marriage ban (December 2021 – into effect 2022)</span></td>
+                                    <td class="tg-fepf"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Eased restrictions enabled more civil activities; ban likely affected underage marriage data and correlated metrics</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">2023-04 and 2023-08 (April-August 2023)</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Synchronized trends in marriages and crime rates | Economic conditions; impact of Typhoon Egay; cultural events and public holidays</span></td>
-                                    <td class="tg-urxo"><span style="font-weight:400;font-style:normal;text-decoration:none;background-color:transparent">Synchronized trends in marriages and crime rates | Economic conditions; impact of Typhoon Egay; cultural events and public holidays</span></td>
+                                    <td class="tg-n1yo"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">April-August 2023</span></td>
+                                    <td class="tg-n1yo"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Record-breaking heatwave; power outages in Occidental Mindoro (April); Super Typhoon Mawar (May); Pride PH Festival (June); Palarong Pambansa &amp; Storm Dodong (July); Second Thomas Shoal standoff and national festivals (August)</span></td>
+                                    <td class="tg-n1yo"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Civil registration delays due to weather and outages; large gatherings may have driven petty crime; festivals and travel impacted marriages and local population dynamics</span></td>
                                 </tr>
                                 </tbody></table>
                             </div>
+                            <p>These overlapping patterns suggest the possibility of shared underlying drivers and interrelated behaviors among features.</p>
+                            <p>While these plots and graphs do not yet confirm statistical significance, which will be explored, they reveal <strong>consistent co-movements among crime rates, birth counts, and marriage counts. These visualizations justify moving forward with our statistical analysis.</strong></p>
+                            <p class="label"><strong>Note:</strong> The events pointed out in the tables during interpretation are simply observational, and their potential impacts are pure speculation and do not, in any way, guarantee causation that these events transformed our data.</p>  
                         </div>
-                        <p class="label">Important Note: The events pointed out in the tables during interpretation are simply observational, and their potential impacts are pure speculation and do not, in any way, guarantee causation that these events transformed our data.</p>
+                    </div>
+                    <div class="card-2">
+                        <div class="text-content">
+                            <p>Our analysis of monthly trends revealed promising signs of correlation between birth and marriage counts and crime rates.</p>
+                            <p>While these patterns suggest a relationship, they do not capture where exactly these interactions are most prominent. Thus, the next question:</p>
+                        </div>
                     </div>
                     <div class="feature-card">
                         <div>
@@ -970,11 +1123,11 @@
                             <div class="mean-container">
                                 <div class="mean-item">
                                     <h2>Radar Charts Per Region</h2>
-                                    <p class="p_black">To highlight regional differences across four features</p>
+                                    <p class="p_black">These charts highlight how each region compares across the four variables, revealing distinct regional patterns and imbalances.</p>
                                 </div>
                                 <div class="mean-item">
                                     <h2>Composite Choropleth Map</h2>
-                                    <p class="p_black">To support spatial comparisons at a high-level glance</p>
+                                    <p class="p_black">This map offers a high-level spatial overview that helps summarize earlier findings.</p>
                                 </div>
                             </div>
                         </div>
@@ -1012,22 +1165,26 @@
                         <div>
                             <h2>VISUALIZATION 2: Composite Choropleth Map</h2>
                             <p>Each region’s color is generated by blending RGB channels as follows:</p>
-                            <div class="grouped_p">
-                                <p>Red → Crime Rate</p>
-                                <p>Green → Birth Count</p>
-                                <p>Blue → Marriage Count</p>
-                                <p>Opacity → to Percent Urban</p>
+                            <div class="list-container">
+                                <ul>
+                                    <li>Red → Crime Rate</li>
+                                    <li>Green → Birth Count</li>
+                                    <li>Blue → Marriage Count</li>
+                                    <li>Opacity → to Percent Urban</li>
+                                </ul>
                             </div>
                             <p>Color intensity reflects the relative dominance of each variable:</p>
-                            <div class="grouped_p">
-                                <p>Redder → Crime-dominant</p>
-                                <p>Greener → Birth-dominant</p>
-                                <p>Bluer → Marriage-dominant</p>
-                                <p>Yellow (R + G) → High Crime Rate and Birth Counts</p>
-                                <p>Magenta (R + B) → High Crime and Marriage Counts</p>
-                                <p>Cyan (G + B) → High Birth and Marriage Counts</p>
-                                <p>White (R + G + B) → High across all variables</p>
-                                <p>Black → Low across all variables (quiet or less developed regions)</p>
+                            <div class="list-container">
+                                <ul>
+                                    <li>Redder → Crime-dominant</li>
+                                    <li>Greener → Birth-dominant</li>
+                                    <li>Bluer → Marriage-dominant</li>
+                                    <li>Yellow (R + G) → High Crime Rate and Birth Counts</li>
+                                    <li>Magenta (R + B) → High Crime and Marriage Counts</li>
+                                    <li>Cyan (G + B) → High Birth and Marriage Counts</li>
+                                    <li>White (R + G + B) → High across all variables</li>
+                                    <li>Black → Low across all variables (quiet or less developed regions)</li>
+                                </ul>
                             </div>
                             <div class="grid-container">
                                 <div class="grid-item">
@@ -1041,28 +1198,51 @@
                             <p>Augmenting our previous observations, the above maps show that:</p>
                             <div class="plot-text">
                                 <p class="plot-class">There is a natural clustering among regions depending on their geographic proximity </p>
-                                <p>Color similarities across neighboring regions suggest that birth, marriage, and crime rates tend to form geographically coherent groupings.</li>
-                            </div>
-                            <p>For instance,</p>
-                            <div class="grouped_p">
-                                <p>Northern Luzon → bluer hues
-                                <p>Central Luzon and Region IV-A → greener hues</p>
-                                <p>Region IV-B and Western Visayas → bluer hues</p>
-                                <p>Region V and Eastern Visayas → muted hues</p>
-                                <p>Central Visayas and Mindanao → redder hues</p>   
+                                <div class="list-container">
+                                    <ul>
+                                        <li>Color similarities across neighboring regions suggest that birth, marriage, and crime rates tend to form geographically coherent groupings.</li>
+                                        <li>For instance,
+                                            <ul>
+                                                <li>Northern Luzon → bluer hues</li>
+                                                <li>Central Luzon and Region IV-A → greener hues</li>
+                                                <li>Region IV-B and Western Visayas → bluer hues</li>
+                                                <li>Region V and Eastern Visayas → muted hues</li>
+                                                <li>Central Visayas and Mindanao → redder hues</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="plot-text">
                                 <p class="plot-class">Percent Urban acts as a multiplier</p>
-                                <p>We can observe that regions with more muted hues in the RGB-only map, reflecting lower all around values across crime, birth, and marriage, also appear more transparent in the alpha-blended version.</p>
-                                <p>Conversely, regions with more vivid colors in the RGB map tend to be more opaque in the alpha-blended graphic, suggesting that higher urbanization typically accompanies higher values in crime, birth, and marriage.</p>
+                                <div class="list-container">
+                                    <ul>
+                                        <li>We can observe that regions with more muted hues in the RGB-only map, reflecting lower all around values across crime, birth, and marriage, also appear more transparent in the alpha-blended version.</li>
+                                        <li>Conversely, regions with more vivid colors in the RGB map tend to be more opaque in the alpha-blended graphic, suggesting that higher urbanization typically accompanies higher values in crime, birth, and marriage.</li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="plot-text">
                                 <p class="plot-class">The relationship between Crime Rate, Birth, and Marriage Counts is not straightforward</p>
-                                <p>While more urbanized areas tend to have higher crime, birth, and marriage values, the balance between them varies across regions. </p>
-                                <p>This variation suggests different underlying dynamics like governance, infrastructure, and culture, but these fall outside the scope of this dataset and research.</p>
-                                <li>e.g. NCR and Davao</li>
+                                <div class="list-container">
+                                    <ul>
+                                        <li>While more urbanized areas tend to have higher crime, birth, and marriage values, the balance between them varies across regions.</li>
+                                        <li>This variation suggests different underlying dynamics like governance, infrastructure, and culture, but these fall outside the scope of this dataset and research.
+                                            <ul>
+                                                <li>e.g. NCR and Davao</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>  
+                    </div>
+                    <div class="card-2">
+                        <div class="text-content">
+                            <p>Our regional analysis revealed that correlations between crime rates, birth counts, and marriage counts are not only present but vary across space.</p>
+                            <p>Crime rate, however, is an aggregate macro-trend.</p>
+                            <p>Therefore, to understand the components of our observed relationships, we ask:</p>
+                        </div>
                     </div>
                     <div class="feature-card">
                         <div>
@@ -1077,15 +1257,15 @@
                                     </div>  
                                 </div>                  
                             </div>
-                            <p>We visualize the data via two means:</p>
+                            <p>We visualize the data through</p>
                             <div class="mean-container">
                                 <div class="mean-item">
                                     <h2>Spearman Correlation Matrix of Crime Types with Birth and Marriage Counts</h2>
-                                    <p class="p_black">To show which cime types show strong correlations with both birth and marriage counts</p>
+                                    <p class="p_black">These show which crime types exhibit strong correlations with both birth and marriage counts.</p>
                                 </div>
                                 <div class="mean-item">
                                     <h2>Correlation Matrix + Bubble Graph</h2>
-                                    <p class="p_black">To see the correlations in a different angle&mdash;also, highlighting possible relationships between high correlation and crime type count.</p>
+                                    <p class="p_black">This visualizes the shown correlations in a different angle, highlighting possible relationships between high correlation and crime type count.  </p>
                                 </div>
                             </div>
                         </div>
@@ -1096,21 +1276,51 @@
                             </div>
                             <p class="label">Seen above: Correlation Matrix between Birth and Marriage counts and Crime types</p>
                             <p>The graph above illustrates that:</p>
-                            <p>Several crime types show strong correlations (r ≥ 0.80) with both births and marriages, implying a notable alignment between birth and marriage counts and crime incidence. The five crime types with the strongest dual correlations are:</p>
-                            <div class="grouped_p">
+                            <p><strong>Several crime types show strong correlations (r ≥ 0.80) with both births and marriage</strong>, implying a notable alignment between birth and marriage counts and crime incidence.</p>
+                            <p>The five crime types with the strongest dual correlations are:</p>
+                            <div class="list-container">
                                 <ol>
-                                    <li>Violation of Special Laws (Non-Index)</li>
-                                    <li>PSI: RIR - Physical Injury</li>
-                                    <li>Index: Focus - Theft</li>
-                                    <li>Non-Index - Other Crimes</li>
-                                    <li>PSI: RIR - Damage to Property</li>
+                                    <li>Violation of Special Laws (Non-Index)
+                                        <ul>
+                                            <li>Births: 0.884, Marriages: 0.798</li>
+                                            <li>This is the strongest overall correlation, suggesting that as the number of births and marriages rise, often suggesting an increased amount of household activity, legal violations typically involving violations against women and children, assault, and other offenses, rise accordingly.</li>
+                                        </ul>
+                                    </li>
+                                    <li>PSI: RIR - Physical Injury
+                                        <ul>
+                                            <li>Births: 0.881, Marriages: 0.793</li>
+                                            <li>This strong correlation may reflect heightened interpersonal tensions or community strain during significant life transitions like childbirth and marriage. Events like welcoming a child and adjusting to married life can amplify domestic or neighborhood disputes, increasing the likelihood of physical altercations.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Index: Focus - Theft
+                                        <ul>
+                                            <li>Births: 0.870, Marriages: 0.752</li>
+                                            <li>Theft is among the most population-sensitive index crimes, indicating that rising birth and marriage numbers may coincide with higher density in communities, presenting both more targets and potentially more motivations for opportunistic crimes like theft.</li>
+                                        </ul>
+                                    </li>
+                                    <li>Non-Index - Other Crimes
+                                        <ul>
+                                            <li>Births: 0.849, Marriages: 0.822</li>
+                                            <li>This catch-all category includes crimes influenced by changing household structures or financial stresses accompanying births and marriages.</li>
+                                        </ul>
+                                    </li>
+                                    <li>PSI: RIR - Damage to Property
+                                        <ul>
+                                            <li>Births: 0.858, Marriages: 0.775</li>
+                                            <li>This relationship indicates a strong connection between domestic life changes common around family expansion or union and property damage-related crimes, possibly due to disputes or increased mobility.</li>
+                                        </ul>
+                                    </li>
                                 </ol>
                             </div>
                             <p>Crimes like Quasi-Homicide (r = 0.234 with births, 0.194 with marriages) show weak correlations, indicating minimal or no relationship with demographic changes.</p>
                             <p>Other notable observations:</p>
-                            <li>Rape and Robbery both exceed 0.72 correlation with marriages and 0.78 with births, underscoring a troubling connection between population events and violent or opportunistic crimes.</li>
-                            <li>Carnapping MC (Motorcycles) has a stronger correlation (r = 0.685 with births) than Carnapping MV (Motor Vehicles) (r = 0.419), suggesting motorcycles may be more affected by demographic growth.</li>
-                            <li>Overall, the matrix indicates that crimes of opportunity and interpersonal harm—such as theft, physical injury, and damage to property—are more responsive to population increases than crimes like quasi-homicide or murder.</p>
+                            <div class="list-container">
+                                <ul>
+                                    <li>Rape and Robbery both exceed 0.72 correlation with marriages and 0.78 with births, underscoring a troubling connection between population events and violent or opportunistic crimes.</li>
+                                    <li>Carnapping MC (Motorcycles) has a stronger correlation (r = 0.685 with births) than Carnapping MV (Motor Vehicles) (r = 0.419), suggesting motorcycles may be more affected by demographic growth.</li>
+                                    <li>Overall, the matrix indicates that crimes of opportunity and interpersonal harm—such as theft, physical injury, and damage to property—are more responsive to population increases than crimes like quasi-homicide or murder.</p>
+                                </ul>
+                            </div>                           
                         </div>
                         <div>
                             <h2>VISUALIZATION 2: Correlation Matrix + Bubble Graph</h2>
@@ -1118,28 +1328,35 @@
                                 <iframe src="elements/plots/rq3_plot2.html" width="100%" height="730px" frameborder="0"></iframe>
                             </div>
                             <p class="label">Seen above: Bubble Graph (Hover to bubble to see specific crime type)</p>
-                            <p>The graph above illustrates that:</p>
-                            <p><strong>Top-right quadrant bubbles</strong> represent crime types with strong positive correlations to both births and marriages.</p>
-                            <p><strong>Larger bubble sizes</strong> indicate higher average crime counts, suggesting these crimes occur more frequently.</p>
-                            <p>The most prominent crimes (both high in correlation and frequency) are:</p>
-                            <div class="grouped_p">
-                                <li>Violation of Special Laws (Non-Index) – Births: 0.884, Marriages: 0.798</li>
-                                <li>PSI: RIR – Physical Injury – Births: 0.881, Marriages: 0.793</li>
-                                <li>Non-Index – Other Crimes – Births: 0.849, Marriages: 0.822</li>
-                                <li>PSI: RIR – Damage to Property – Births: 0.858, Marriages: 0.775</li>
-                                <li>Index: Focus – Theft – Births: 0.870, Marriages: 0.752</li>
+                            <p>Top-right quadrant bubbles represent crime types with strong positive correlations to both birth and marriage counts. Larger bubble sizes are associated with higher average crime counts, indicating these crimes occur more frequently.</p>
+                            <p>The graph shows that the <strong>most prominent crimes</strong>, both in terms of correlation and frequency, are:</p>
+                            <div class="list-container">
+                                <ul>
+                                    <li>Violation of Special Laws (Non-Index) – Births: 0.884, Marriages: 0.798</li>
+                                    <li>PSI: RIR – Physical Injury – Births: 0.881, Marriages: 0.793</li>
+                                    <li>Non-Index – Other Crimes – Births: 0.849, Marriages: 0.822</li>
+                                    <li>PSI: RIR – Damage to Property – Births: 0.858, Marriages: 0.775</li>
+                                    <li>Index: Focus – Theft – Births: 0.870, Marriages: 0.752</li>
+                                </ul>
                             </div>
-                            <p> <strong>Lower-left quadrant bubbles</strong> (e.g., Quasi-Homicide, Special Complex Crimes) have weak correlations and low frequency, showing minimal connection to births or marriages.</p>
-                            <p>These crime types are both <strong>highly responsive to demographic trends </strong> and <strong>frequently committed</strong>, as shown by their position and bubble size.</p>
-                            <p>The visual trends in the plot <strong>reinforce the numerical findings </strong>in the correlation matrix: crimes involving regulation, interpersonal harm, and property are most influenced by demographic events like births and marriages.</p>
+                            <p>These crime types are both highly responsive to demographic trends and frequently committed, as shown by their position and bubble size.</p>
+                            <p>Lower-left quadrant bubbles like Quasi-Homicide and Special Complex Crimes have weak correlations and low frequency, showing minimal connection to births or marriages.</p>
+                            <p>The visual trends in the plot reinforce the numerical findings in the correlation matrix: crimes involving regulation, interpersonal harm, and property are most influenced by demographic events like births and marriages.</p>
+                        </div>
+                    </div>
+                    <div class="card-2">
+                        <div class="text-content">
+                            <p>So far, we have explored visual patterns and correlations that highlight meaningful relationships between crime rates, birth counts, and marriage counts.</p>
+                            <p>But while these observations suggest associations, they do not confirm whether these relationships are statistically significant or simply coincidental.</p>
+                            <p>To formally assess whether the patterns we have seen hold up under statistical scrutiny, we now turn to hypothesis testing.</p>
                         </div>
                     </div>
                     <div class="feature-card">
                         <div>
                             <h1>HYPOTHESIS TESTING</h1>
-                            <p>We move on to testing our hypotheses.</p>
                             <h2>Pairwise Correlation</h2>
-                            <p>First let us formally check for the pairwise correlations. Since the data are not normally distributed, we use Spearman correlation.</p>
+                            <p>First, let us formally check for the pairwise correlations.</p>
+                            <p>Given that the distributions are not normal, we use Spearman’s rank correlation.</p>
                             <!--TABLE-->
                             <div>
                                 <style type="text/css">
@@ -1148,36 +1365,43 @@
                                 overflow:hidden;padding:10px 5px;word-break:normal;}
                                 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
                                 font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                                .tg .tg-dlfj{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;text-align:left;vertical-align:top}
-                                .tg .tg-i1ym{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;font-weight:bold;text-align:left;
+                                .tg .tg-rmy1{background-color:#FFF;border-color:#000000;color:#FFF;font-size:16px;text-align:center;vertical-align:top}
+                                .tg .tg-p91b{background-color:#efefef;border-color:#000000;color:#FFF;font-size:16px;font-weight:bold;text-align:left;
                                 vertical-align:top}
+                                .tg .tg-o3ss{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:center;
+                                vertical-align:top}
+                                .tg .tg-28t6{background-color:#FFF;border-color:#000000;color:#FFF;font-size:16px;font-weight:bold;text-align:left;
+                                vertical-align:top}
+                                .tg .tg-8neo{background-color:#efefef;border-color:#000000;color:#FFF;font-size:16px;text-align:center;vertical-align:top}
                                 </style>
                                 <table class="tg"><thead>
                                 <tr>
-                                    <th class="tg-i1ym"></th>
-                                    <th class="tg-i1ym"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Correlation Coefficient</span></th>
-                                    <th class="tg-i1ym"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">p-value</span></th>
+                                    <th class="tg-o3ss"></th>
+                                    <th class="tg-o3ss">Correlation Coefficient</th>
+                                    <th class="tg-o3ss">p-value</th>
                                 </tr></thead>
                                 <tbody>
                                 <tr>
-                                    <td class="tg-i1ym"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Births - Crime Rates</span></td>
-                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">0.782</span></td>
-                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">4.953e-75</span></td>
+                                    <td class="tg-28t6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Births - Crime Rates</span></td>
+                                    <td class="tg-rmy1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">0.782</span></td>
+                                    <td class="tg-rmy1"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">4.953e-75</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-i1ym"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Marriages - Crime Rates</span></td>
-                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">0.689</span></td>
-                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">1.311e-51</span></td>
+                                    <td class="tg-p91b"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Marriages - Crime Rates</span></td>
+                                    <td class="tg-8neo"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">0.689</span></td>
+                                    <td class="tg-8neo"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">1.311e-51</span></td>
                                 </tr>
-                                </tbody></table>
+                                </tbody>
+                                </table>
                             </div>
-                            <p>We get 0.78 as the correlation coefficient between birth counts and crime rates, and 0.69 between marriage counts and crime rates. The corresponding p-values for these are under the alpha of 0.05, so we can say that there is a significant correlation between birth counts and crime rates, and between marriage counts and crime rates.</p>
-                            <p>The positive correlation pairwise between births and crime rates may be due to the fact that in a larger population the likelihood of crime instances may also increase. The same can be said of the positive correlation between marriages and crime rates. Births, marriages, and crime rates may be influenced by population growth–as the population increases, so too do birth counts, marriage counts, and crime rates. </p>
+                            <p>The correlation between birth counts and crime rates is 0.78, with a p-value well below the alpha 0.05. On the other hand, the correlation between marriage counts and crime rates is 0.69, also significant at the 0.05 level.</p>
+                            <p>Thus, we can say that there is a significant positive correlation between birth counts and crime rates, and between marriage counts and crime rates.</p>
+                            <p>A possible explanation for both positive pairwise correlations is that birth counts, marriage counts, and crime rates may co-move as byproducts of population growth, where more people result in more of each event.</p>
                         </div>
-                        <div class="table-card">
+                        <div>
                             <h2>Multiple Regression</h2>
-                            <p>We now check for the relationship between births and marriages together on the crime rates. This can be done by using a multiple regression model.</p>
-                            <p>Since the data is positively skewed, we apply a log transformation on the births, marriages, and crime rates data. The data is not perfectly normally distributed, but it is no longer significantly right-skewed.</p>
+                            <p>Next, we assess how birth and marriage counts together correlate with changes in crime rates. This can be done by using a multiple regression model.</p>
+                            <p>Since the data is positively skewed, we apply a log transformation to birth counts, marriage counts, and crime rates. The data is not perfectly normally distributed, but it is no longer significantly right-skewed.</p>
                             <!--HISTOGRAMS-->
                             <div>
                                 <style type="text/css">
@@ -1186,54 +1410,62 @@
                                 overflow:hidden;padding:10px 5px;word-break:normal;}
                                 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
                                 font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                                .tg .tg-dlfj{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;text-align:left;vertical-align:top}
-                                .tg .tg-vqbd{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;font-weight:bold;text-align:right;
-                                vertical-align:middle}
+                                .tg .tg-39o3{background-color:#efefef;border-color:#000000;color:#000000;font-weight:bold;text-align:center;vertical-align:top}
+                                .tg .tg-0adu{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:left;
+                                vertical-align:top}
+                                .tg .tg-l5ls{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;font-weight:bold;text-align:center;
+                                vertical-align:top}
                                 .tg .tg-eea2{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;text-align:right;vertical-align:middle}
-                                .tg .tg-akg0{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;font-weight:bold;text-align:center;
-                                vertical-align:middle}
+                                .tg .tg-jllp{background-color:#462c2c;border-color:#000000;color:#000000;font-size:16px;font-weight:bold;text-align:right;
+                                vertical-align:top}
+                                .tg .tg-vkgt{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:right;
+                                vertical-align:top}
+                                .tg .tg-imv1{background-color:#efefef;border-color:#000000;color:#000000;font-size:16px;font-weight:bold;text-align:center;
+                                vertical-align:top}
+                                .tg .tg-oekz{background-color:#efefef;border-color:#000000;color:#000000;font-size:16px;text-align:right;vertical-align:middle}
+                                .tg .tg-wzu8{background-color:#ffffff;border-color:#000000;color:#000000;font-weight:bold;text-align:center;vertical-align:top}
                                 </style>
                                 <table class="tg"><thead>
                                 <tr>
-                                    <th class="tg-vqbd"></th>
-                                    <th class="tg-vqbd">Number of Registered Births</th>
-                                    <th class="tg-vqbd">Number of Registered Marriages</th>
-                                    <th class="tg-dlfj"><span style="font-weight:bold">Average Monthly Crime Rate</span></th>
+                                    <th class="tg-jllp"></th>
+                                    <th class="tg-vkgt">Number of Registered Births</th>
+                                    <th class="tg-0adu">Number of Registered Marriages</th>
+                                    <th class="tg-0adu">Average Monthly Crime Rate</th>
                                 </tr></thead>
                                 <tbody>
                                 <tr>
-                                    <td class="tg-akg0"><span style="font-weight:700">0</span></td>
+                                    <td class="tg-l5ls"><span style="font-weight:700">0</span></td>
                                     <td class="tg-eea2">9.492055</td>
                                     <td class="tg-eea2">7.945201</td>
                                     <td class="tg-eea2">3.832114</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-akg0"><span style="font-weight:700">1</span></td>
-                                    <td class="tg-eea2">7.675546</td>
-                                    <td class="tg-eea2">6.624065</td>
-                                    <td class="tg-eea2">1.985131</td>
+                                    <td class="tg-imv1"><span style="font-weight:700">1</span></td>
+                                    <td class="tg-oekz">7.675546</td>
+                                    <td class="tg-oekz">6.624065</td>
+                                    <td class="tg-oekz">1.985131</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-akg0"><span style="font-weight:700">2</span></td>
+                                    <td class="tg-wzu8"><span style="font-weight:700">2</span></td>
                                     <td class="tg-eea2">8.617039</td>
                                     <td class="tg-eea2">7.647786</td>
                                     <td class="tg-eea2">2.545531</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-akg0"><span style="font-weight:700">3</span></td>
-                                    <td class="tg-eea2">8.294300</td>
-                                    <td class="tg-eea2">6.878326</td>
-                                    <td class="tg-eea2">2.758109</td>
+                                    <td class="tg-39o3"><span style="font-weight:700">3</span></td>
+                                    <td class="tg-oekz">8.294300</td>
+                                    <td class="tg-oekz">6.878326</td>
+                                    <td class="tg-oekz">2.758109</td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-akg0"><span style="font-weight:700">4</span></td>
+                                    <td class="tg-wzu8"><span style="font-weight:700">4</span></td>
                                     <td class="tg-eea2">9.561912</td>
                                     <td class="tg-eea2">8.176673</td>
                                     <td class="tg-eea2">3.151881</td>
                                 </tr>
                                 </tbody></table>
                             </div>
-                            <p>Applying the data into the multiple regression model (with birth counts and marriage counts as predictors) gives the following output:</p>
+                            <p>Using Ordinary Least Squares regression with logged birth and marriage counts as predictors gives the following output:</p>
                             <!--??-->
                             <div>
                                 <style type="text/css">
@@ -1242,29 +1474,39 @@
                                 overflow:hidden;padding:10px 5px;word-break:normal;}
                                 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
                                 font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                                .tg .tg-dlfj{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                .tg .tg-ufyz{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:15px;font-weight:bold;text-align:center;
+                                vertical-align:top}
+                                .tg .tg-w7lj{background-color:#FFF;border-color:#000000;color:#000000;font-size:15px;font-weight:bold;text-align:left;
+                                vertical-align:top}
+                                .tg .tg-8yso{background-color:#FFF;border-color:#000000;color:#000000;font-size:15px;text-align:left;vertical-align:top}
+                                .tg .tg-4xam{background-color:#efefef;border-color:#000000;color:#000000;font-size:15px;font-weight:bold;text-align:left;
+                                vertical-align:top}
+                                .tg .tg-9dtp{background-color:#efefef;border-color:#000000;color:#000000;font-size:15px;text-align:left;vertical-align:top}
                                 </style>
                                 <table class="tg"><thead>
                                 <tr>
-                                    <th class="tg-dlfj"></th>
-                                    <th class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none">p-value</span></th>
+                                    <th class="tg-ufyz"></th>
+                                    <th class="tg-ufyz"><span style="font-style:normal;text-decoration:none">p-value</span></th>
                                 </tr></thead>
                                 <tbody>
                                 <tr>
-                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none">const                            </span></td>
-                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none">1.398782e-19</span></td>
+                                    <td class="tg-w7lj"><span style="font-weight:400;font-style:normal;text-decoration:none">const</span></td>
+                                    <td class="tg-8yso"><span style="font-weight:400;font-style:normal;text-decoration:none">1.398782e-19</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none">Number of Registered Births       </span></td>
-                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none">4.053306e-29</span></td>
+                                    <td class="tg-4xam"><span style="font-weight:400;font-style:normal;text-decoration:none">Number of Registered Births</span></td>
+                                    <td class="tg-9dtp"><span style="font-weight:400;font-style:normal;text-decoration:none">4.053306e-29</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none">Number of Registered Marriages    </span></td>
-                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none">8.114509e-05</span></td>
+                                    <td class="tg-w7lj"><span style="font-weight:400;font-style:normal;text-decoration:none">Number of Registered Marriages</span></td>
+                                    <td class="tg-8yso"><span style="font-weight:400;font-style:normal;text-decoration:none">8.114509e-05</span></td>
                                 </tr>
-                                </tbody></table>
+                                </tbody>
+                                </table>    
                             </div>
-                            <p>We can see from the above that the p-values for the Number of Registered Births and Number of Registered Marriages are way below our p-value of 0.05, indicating that their effect on Average Monthly Crime Rate data is statistically significant. The R-squared value is 0.564, indicating that 56.4% of the variance in crime rates is explained by the birth and marriage counts. Finally, as the value of (Prob) F-statistic < alpha (3.86e-58 < 0.05), it can be said that at least one of our independent variables (Number of Registered Births and Number of Registered Marriages) has a statistically significant effect on the crime rates.</p>
+                            <p>We can see from the above table that the p-values for both predictor variables are well below the p-value of 0.05, indicating they each have a statistically significant effect on crime rates.</p>
+                            <p>The coefficient for births is notably stronger, suggesting that it may exert more influence in explaining crime fluctuations than marriages do.</p>
+                            <!--INSERT TABLE-->
                             <div>
                                 <style type="text/css">
                                 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -1272,24 +1514,44 @@
                                 overflow:hidden;padding:10px 5px;word-break:normal;}
                                 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
                                 font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                                .tg .tg-7raw{background-color:#ffffff;border-color:#000000;color:#ffffff;font-size:100%;text-align:left;vertical-align:top}
+                                .tg .tg-s0cr{background-color:#FFF;border-color:#000000;color:#000000;font-size:16px;text-align:center;vertical-align:top}
+                                .tg .tg-o3ss{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:center;
+                                vertical-align:top}
+                                .tg .tg-9clr{background-color:#ffffff;border-color:#000000;color:#ffffff;font-size:16px;text-align:center;vertical-align:top}
                                 </style>
                                 <table class="tg"><thead>
                                 <tr>
-                                    <th class="tg-7raw"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">R-squared</span></th>
-                                    <th class="tg-7raw"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">0.564</span></th>
+                                    <th class="tg-o3ss"><span style="font-style:normal;text-decoration:none">R-squared</span></th>
+                                    <th class="tg-9clr"><span style="font-style:normal;text-decoration:none;color:#000">0.564</span></th>
                                 </tr></thead>
                                 <tbody>
                                 <tr>
-                                    <td class="tg-7raw"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">(Prob) F-statistic</span></td>
-                                    <td class="tg-7raw"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">3.86e-58</span></td>
+                                    <td class="tg-o3ss"><span style="font-style:normal;text-decoration:none">(Prob) F-statistic</span></td>
+                                    <td class="tg-s0cr"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">3.86e-58</span></td>
                                 </tr>
                                 </tbody>
                                 </table>
                             </div>
-                            <p>The R-squared value is 0.564, indicating that 56.4% of the variance in crime rates is explained by the birth and marriage counts. Finally, as the value of (Prob) F-statistic < alpha (3.86e-58 < 0.05), it can be said that at least one of our independent variables (Number of Registered Births and Number of Registered Marriages) has a statistically significant effect on the crime rates.</p>
-                            <p>To verify the results of this model, we used a robust linear regression model that can handle outliers and skew for comparison. The resulting parameters shown below give similar values, so we can take our results as valid.</p>
-                            <!--table-->
+                            <p>The R-squared value is 0.564, indicating that 56.4% of the variance in crime rates is explained by the birth and marriage counts.</p>
+                            <p>Finally, as the value of (Prob) F-statistic is less than the alpha 0.05, it can be said that at least one of our independent variables (Number of Registered Births and Number of Registered Marriages) has a statistically significant effect on the crime rates.</p>
+                        </div>
+                        <div>
+                            <h2>Resiual Diagnostics</h2> 
+                            <p>To assess the validity of our model, we check whether the residuals follow a normal distribution, as assumed in linear regression.</p>  
+                            <!--INSERT PLOT-->
+                            <div class="plot-card">
+                                <img src="elements/plots/regression-residuals.png">
+                            </div>
+                            <p>As we can see, the residuals are not normally distributed, violating the assumption.</p>
+                            <p>We can also see from the Q-Q plot that the points do not follow the normal line:</p>
+                            <!--INSERT PLOT-->
+                            <div class="plot-card">
+                                <img src="elements/plots/regression-qq.png">
+                            </div>
+                            <p>The violation of these  assumptions may be caused by the outliers or structural irregularities in the data.</p>
+                            <p>To address this issue, we apply a Robust Linear Regression model (RLM), which is more resilient to skew and outliers.</p>
+                            <p>The resulting coefficients remain consistent. Hence, we can take our earlier results as valid despite linear regression assumption violations.</p>
+                            <!--INSERT TABLE-->
                             <div>
                                 <style type="text/css">
                                 .tg  {border-collapse:collapse;border-spacing:0;}
@@ -1297,53 +1559,137 @@
                                 overflow:hidden;padding:10px 5px;word-break:normal;}
                                 .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
                                 font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-                                .tg .tg-vfn0{background-color:#efefef;border-color:#000000;text-align:left;vertical-align:top}
-                                .tg .tg-15sy{background-color:#efefef;border-color:#000000;color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                .tg .tg-4kph{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;text-align:center;vertical-align:top}
+                                .tg .tg-i1m6{background-color:#ffffff;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:left;
+                                vertical-align:top}
+                                .tg .tg-i1l9{background-color:#efefef;color:#000000;font-size:16px;text-align:center;vertical-align:top}
+                                .tg .tg-o3ss{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:center;
+                                vertical-align:top}
+                                .tg .tg-4bxf{background-color:#462c2c;color:#ffffff;font-size:16px;font-weight:bold;text-align:center;vertical-align:top}
+                                .tg .tg-q7v3{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;text-align:center;vertical-align:top}
+                                .tg .tg-ly18{background-color:#ffffff;font-size:16px;text-align:center;vertical-align:top}
+                                .tg .tg-5dut{background-color:#efefef;color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                .tg .tg-o5ha{background-color:#ffffff;font-size:16px;text-align:left;vertical-align:top}
                                 </style>
                                 <table class="tg"><thead>
                                 <tr>
-                                    <th class="tg-15sy"></th>
-                                    <th class="tg-15sy"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">OLS</span></th>
-                                    <th class="tg-vfn0"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">RLM</span></th>
+                                    <th class="tg-4kph"></th>
+                                    <th class="tg-o3ss"><span style="font-style:normal;text-decoration:none">OLS</span></th>
+                                    <th class="tg-4bxf"><span style="font-style:normal;text-decoration:none">RLM</span></th>
                                 </tr></thead>
                                 <tbody>
                                 <tr>
-                                    <td class="tg-15sy"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">const</span></td>
-                                    <td class="tg-15sy"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">-3.139933</span></td>
-                                    <td class="tg-vfn0"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">-3.248856</span></td>
+                                    <td class="tg-i1m6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">const</span></td>
+                                    <td class="tg-q7v3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">-3.139933</span></td>
+                                    <td class="tg-ly18"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">-3.248856</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-15sy"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Births</span></td>
-                                    <td class="tg-15sy"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">0.598162</span></td>
-                                    <td class="tg-vfn0"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">0.627443</span></td>
+                                    <td class="tg-5dut"><span style="font-weight:400;font-style:normal;text-decoration:none">Births</span></td>
+                                    <td class="tg-i1l9"><span style="font-weight:400;font-style:normal;text-decoration:none">0.598162</span></td>
+                                    <td class="tg-i1l9"><span style="font-weight:400;font-style:normal;text-decoration:none">0.627443</span></td>
                                 </tr>
                                 <tr>
-                                    <td class="tg-15sy"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Marriages</span></td>
-                                    <td class="tg-15sy"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">0.118368</span></td>
-                                    <td class="tg-vfn0"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">0.094712</span></td>
+                                    <td class="tg-o5ha"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">Marriages</span></td>
+                                    <td class="tg-ly18"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">0.118368</span></td>
+                                    <td class="tg-ly18"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000">0.094712</span></td>
                                 </tr>
                                 </tbody></table>
                             </div>
-                            <p>Thus, same as with the pairwise correlation, we can say that <strong> births and marriages have a significant effect on crime rates.</strong></p>
+                            <p>Consistent with the pairwise correlation results, the multiple regression models confirm that birth and marriage counts have a statistically significant correlation with crime rates.</p>
+                            <p>Although the outliers were retained in the primary analysis, as they may be valuable data points, we also fitted both the OLS and RLM models on datasets with outliers removed to assess their potential influence.</p>
+                            <p>The resulting coefficients are as follows:</p>
+                            <!--INSERT TABLE-->
+                            <div>
+                                <style type="text/css">
+                                .tg  {border-collapse:collapse;border-spacing:0;}
+                                .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                overflow:hidden;padding:10px 5px;word-break:normal;}
+                                .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                .tg .tg-dlfj{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                .tg .tg-4kph{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;text-align:center;vertical-align:top}
+                                .tg .tg-i1m6{background-color:#ffffff;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:left;
+                                vertical-align:top}
+                                .tg .tg-o3ss{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:center;
+                                vertical-align:top}
+                                .tg .tg-4bxf{background-color:#462c2c;color:#ffffff;font-size:16px;font-weight:bold;text-align:center;vertical-align:top}
+                                .tg .tg-o5ha{background-color:#ffffff;font-size:16px;text-align:left;vertical-align:top}
+                                .tg .tg-5dut{background-color:#efefef;color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                </style>
+                                <table class="tg"><thead>
+                                <tr>
+                                    <th class="tg-4kph"></th>
+                                    <th class="tg-o3ss"><span style="font-style:normal;text-decoration:none">OLS</span></th>
+                                    <th class="tg-4bxf"><span style="font-style:normal;text-decoration:none">RLM</span></th>
+                                </tr></thead>
+                                <tbody>
+                                <tr>
+                                    <td class="tg-i1m6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">const</span></td>
+                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">-3.179567</span></td>
+                                    <td class="tg-o5ha"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">-3.303626</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-5dut"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Births</span></td>
+                                    <td class="tg-5dut"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">0.582826</span></td>
+                                    <td class="tg-5dut"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">0.610660</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-o5ha"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Marriages</span></td>
+                                    <td class="tg-o5ha"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">0.141194</span></td>
+                                    <td class="tg-o5ha"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">0.121883</span></td>
+                                </tr>
+                                </tbody></table>
+                            </div>
+                            <p>We also have the p-values from the OLS model:</p>
+                            <!--INSERT TABLE-->
+                            <div>
+                                <style type="text/css">
+                                .tg  {border-collapse:collapse;border-spacing:0;}
+                                .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                overflow:hidden;padding:10px 5px;word-break:normal;}
+                                .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                                font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                .tg .tg-15sy{background-color:#efefef;border-color:#000000;color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                .tg .tg-dlfj{background-color:#ffffff;border-color:#000000;color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                .tg .tg-4kph{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;text-align:center;vertical-align:top}
+                                .tg .tg-ydi3{background-color:#ffffff;border-color:#000000;font-size:16px;text-align:left;vertical-align:top}
+                                .tg .tg-i1m6{background-color:#ffffff;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:left;
+                                vertical-align:top}
+                                .tg .tg-o3ss{background-color:#462c2c;border-color:#000000;color:#ffffff;font-size:16px;font-weight:bold;text-align:center;
+                                vertical-align:top}
+                                </style>
+                                <table class="tg"><thead>
+                                <tr>
+                                    <th class="tg-4kph"></th>
+                                    <th class="tg-o3ss"><span style="font-style:normal;text-decoration:none;background-color:transparent">p-value</span></th>
+                                </tr></thead>
+                                <tbody>
+                                <tr>
+                                    <td class="tg-i1m6"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">const                            </span></td>
+                                    <td class="tg-dlfj"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">1.159422e-19</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-15sy"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Number of Registered Births       </span></td>
+                                    <td class="tg-15sy"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">3.241703e-25</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">Number of Registered Marriages    </span></td>
+                                    <td class="tg-ydi3"><span style="font-weight:400;font-style:normal;text-decoration:none;color:#000;background-color:transparent">3.610169e-04</span></td>
+                                </tr>
+                                </tbody></table>
+                            </div>
+                            <p>The resulting coefficients remained consistent. Moreover, based on the p-values, birth counts continue to show a stronger correlation on crime rates than marriage counts.</p>
                         </div>                       
                     </div>
                 </div>
             </article>
     
-            <!--
-            <article id="methods" class="methods-section">
-                <div class="data-section-header">
-                    <div class="section-header">
-                        <h2>METHODS</h2>
-                    </div>
-            </article>
-    
             <article id="results" class="results-section">
                 <div class="data-section-header">
                     <div class="section-header">
-                        <h2>RESULTS</h2>
+                        <h2>RESULTS & CONCLUSION</h2>
                     </div>
-            </article> -->
+            </article>
     
             <article id="team" class="team-section">
                 <div class="team-content">
@@ -1454,7 +1800,7 @@
                                 </div>
                                 <div>
                                     <p>
-                                        I'm a 3rd year BS Computer Science student from the University of the Philippines-Diliman, interested in the fields of Cybersecurity and Web Development. Outside my coding environment, I like to jog, to play Basketball, and to watch movies. 
+                                        I'm a 3rd year BS Computer Science student, interested in the fields of Cybersecurity and Web Development. Outside my coding environment, I like to jog, to play Basketball, and to watch movies. 
                                     </p>
                                 </div>
                             </div>

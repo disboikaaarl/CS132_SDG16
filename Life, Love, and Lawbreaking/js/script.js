@@ -114,7 +114,7 @@ function openCity(evt, cityName) {
   evt.currentTarget.className += " active";
 }
 
-window.addEventListener('load', () => {
+/*window.addEventListener('load', () => {
   const life = document.querySelector('.life');
   const love = document.querySelector('.love');
   const lawbreaking = document.querySelector('.lawbreaking');
@@ -134,3 +134,4 @@ window.addEventListener('load', () => {
     }, 1000);
   }, 500);
 });
+*/

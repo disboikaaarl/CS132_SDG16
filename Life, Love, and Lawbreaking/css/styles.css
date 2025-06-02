@@ -173,6 +173,7 @@ html{
   
   nav ul li a:hover {
     color: #850101;
+    font-weight: bold;
   }
   
   nav ul li a:active {
@@ -316,11 +317,7 @@ html{
   }
 
   .data-container{
-    display: flex;
-    flex-direction: column;
     max-width: 80%;
-
-    gap: 50px;
   }
 
   .data-section-header{
@@ -423,7 +420,7 @@ html{
     flex-direction: column;
 
     gap: 15px;
-    margin-top: 50px;
+    margin-top: 30px;
   }
 
   .collapsible{
@@ -483,20 +480,15 @@ html{
     padding: 2rem;
     border-radius: 1.5rem;
 
-    margin: 15px 15px 0; 
-
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     background-color: #862c2c;
-    
   }
 
   .data-understanding, .data-preparation{
     font-family: 'Nunito', sans-serif;
     font-size: 19px;
-  }
-
-  .tab-container{
-    padding: 50px 0;
+    margin-bottom: 100px;
+    margin-top: 20px;
   }
 
   .tab {
@@ -534,6 +526,7 @@ html{
     display: none;
     padding: 2rem;
     border-radius: 1.5rem;
+    font-size: 18px ;
 
     background-color: #862c2c;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
