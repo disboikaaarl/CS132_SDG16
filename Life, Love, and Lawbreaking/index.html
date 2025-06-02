@@ -714,7 +714,17 @@
                         <!--UNIVARIATE ANALYSIS-->
                         <div class="feature-card">
                             <div>
-                                <h1>UNIVARIATE ANALYSIS</h1>
+                                <div class="rq-header-button">
+                                <div>
+                                    <h1>UNIVARIATE ANALYSIS</h1>
+                                </div>
+                                <div>
+                                    <!--NOTEBOOK LINK-->
+                                    <div>
+                                        <a class="rq-notebook" href="https://colab.research.google.com/drive/1_4f4DuxvKJ5ThD3XL_eI3SA_B8YpJzZs?usp=sharing" target="_blank">View our EDA</a>
+                                    </div>  
+                                </div>                  
+                            </div>
                                 <h2>Distribution</h2>
                                 <p>To begin, we checked the distribution of each dataset.</p>
                                 <div class="plots-container">
@@ -1353,7 +1363,17 @@
                     </div>
                     <div class="feature-card">
                         <div>
-                            <h1>HYPOTHESIS TESTING</h1>
+                            <div class="rq-header-button">
+                                <div>
+                                    <h1>HYPOTHESIS TESTING</h1>
+                                </div>
+                                <div>
+                                    <!--NOTEBOOK LINK-->
+                                    <div>
+                                        <a class="rq-notebook" href="https://colab.research.google.com/drive/1lvSXBq9yvyt25wEOotUnX8tBIbQvNpDP?usp=sharing" target="_blank">View Hypothesis Testing Notebook</a>
+                                    </div>  
+                                </div>                  
+                            </div>
                             <h2>Pairwise Correlation</h2>
                             <p>First, let us formally check for the pairwise correlations.</p>
                             <p>Given that the distributions are not normal, we use Spearman’s rank correlation.</p>
@@ -1536,7 +1556,7 @@
                             <p>Finally, as the value of (Prob) F-statistic is less than the alpha 0.05, it can be said that at least one of our independent variables (Number of Registered Births and Number of Registered Marriages) has a statistically significant effect on the crime rates.</p>
                         </div>
                         <div>
-                            <h2>Resiual Diagnostics</h2> 
+                            <h2>Residual Diagnostics</h2> 
                             <p>To assess the validity of our model, we check whether the residuals follow a normal distribution, as assumed in linear regression.</p>  
                             <!--INSERT PLOT-->
                             <div class="plot-card">
@@ -1689,6 +1709,33 @@
                     <div class="section-header">
                         <h2>RESULTS & CONCLUSION</h2>
                     </div>
+                </div>
+                <div class="results-container">
+                    <div class="results-items">
+                        <h2>Summary</h2>
+                        <div>
+                            <ul>
+                                <li>Birth counts and marriage counts have a statistically significant effect on crime rates. REJECT NULL HYPOTHESIS</li>
+                                <li>Births, marriages, and crime rates fluctuate, possibly influenced by political, social, and economic events.</li>
+                                <li>The relationship between births, marriages, and crime rates varies by region, and by urbanization values.</li>
+                                <li>Crimes under Violation of Special Laws (Non-Index); Physical Injury, and Damage to Property due to Reckless Imprudence; and Theft (Focus Crimes) were highly correlated with birth rates and marriage rates.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="results-items">
+                        <h2>Implications</h2>
+                        <p>Birth counts, marriage counts, and crime rates have a positive correlation, and have high values in areas of higher urbanization levels. This suggests that people, in earning a living for their families, flock towards areas considered more urban, where jobs are more prolific. This may be a reflection of the unequal distribution of development and opportunities in the country. Policy-making should prioritize distributing developments, to distribute population density, so that there are no highly urbanized areas, and consider families living in highly urban, high-risk areas.</p>
+                    </div>
+                </div>
+                <div class="results-card">
+                    <h2>Limitations</h2>
+                    <p>While we were able to produce analyses using various visualizations and models, and were able to come to the same findings, the results of this study are limited by our datasets. We are limited by the crime dataset, which only spans 2022-2023 data. Our urbanization dataset came from the 2020 census as the 2024 census has not yet been released. </p>
+                    <p>Furthermore, the data could be modeled using k-means clustering for more sophisticated results, but this method would best be done with a more granular dataset (e.g. per barangay). The current dataset is limited to by-region granularity.</p>
+                </div>
+                <div class="results-card">
+                    <h2>Recommendations</h2>
+                    <p></p>
+                </div>
             </article>
     
             <article id="team" class="team-section">

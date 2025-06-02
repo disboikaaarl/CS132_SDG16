@@ -61,7 +61,8 @@
     margin: 0;
     color: #ff8c8c;
     font-weight: bold;
-    font-style: 'Agrandir Bold';
+    font-family: 'Agrandir-Bold';
+    font-style: italic;
 }
 .feature-card p{
     color: #eee;
@@ -215,11 +216,6 @@ table{
     box-shadow: rgba(0, 0, 0, 0.5);
 }
 
-.collapsible-divider{
-    border: 1px solid red;
-
-}
-
 .rq-header-button{
     display: flex;
     flex-direction: row;
@@ -243,6 +239,7 @@ table{
 
 .rq-notebook:hover{
     box-shadow: 0 0 15px rgba(0, 0, 0, 1);
+    transform: scale(1.2);
 }
 
 .framework-container{
@@ -309,6 +306,7 @@ table{
 
 .list-container{
     margin-bottom: 30px;
+    text-align: justify;
 }
 
 .tabcontent li{
@@ -326,4 +324,45 @@ table{
     padding: 2.5rem;
     border-radius: 20px;
     margin-top: 50px;
+}
+
+.results-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px 150px;
+}
+
+.results-items{
+    background-color: #862c2c;
+    width: 100%;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: justify;
+}
+
+.results-items h2, .results-card h2{
+    font-family: 'Agrandir-Bold';
+    margin-bottom: 10px;
+}
+
+.results-items ul{
+    margin-left: 20px;
+    text-align: justify;
+}
+
+.results-items ul li{
+    padding: 5px 0;
+}
+
+.results-card{
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    padding: 2rem;
+    border-radius: 20px;   
+    width: 80%; 
+    margin-bottom: 20px; 
+    text-align: justify;
 }
